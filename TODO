@@ -1,3 +1,8 @@
-Create MvcInterface
-Create MvcModelInterface
+Create MvcInterface (DONE)
+Create MvcModelInterface (DONE)
 Create Game.java (DONE)
+
+Add to InterfaceView
+Add to InterfaceModel
+Create MvcView
+Create MvcModel
