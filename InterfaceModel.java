@@ -1,4 +1,4 @@
-
+import java.beans.PropertyChangeListener;
 
 public interface InterfaceModel {
 	

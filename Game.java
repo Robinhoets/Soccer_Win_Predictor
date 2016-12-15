@@ -2,11 +2,11 @@
 
 public class Game{
 	
-	int possesion;
+	int possession;
 	int shots;
 
 	public Game(int possesion, int shots) {
-		this.possesion = possesion;
+		this.possession = possession;
 		this.shots = shots;
 	}
 

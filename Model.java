@@ -1,8 +1,19 @@
 
-public class Model implements InterfaceModel{
+public class Model implements InterfaceModel {
 	
 
-	public class Model() {
-	
-	}
+
+
+
+	@Override
+   	public void addPropertyChangeListener(PropertyChangeListener listener) {
+     	 propChangeSupport.addPropertyChangeListener(listener);
+  	}
+
+   	@Override
+   	public void removePropertyChangeListener(PropertyChangeListener listener) {
+     	 propChangeSupport.removePropertyChangeListener(listener);
+  	}
+
+
 }
