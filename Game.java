@@ -9,5 +9,14 @@ public class Game{
 		this.possesion = possesion;
 		this.shots = shots;
 	}
+
+
+	public int getPossession(){
+		return possession;
+	}
+
+	public int getShots(){
+		return shots;
+	}
 	
 }
