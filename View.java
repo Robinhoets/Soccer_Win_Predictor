@@ -8,59 +8,28 @@ import java.awt.*;
 
 public class View implements InterfaceView {
 
-
-	protected static final String possessionFieldString = "Possession: ";
-	protected static final String shotFieldString = "Shots: ";
-
-	
+	// Create frame
+    private JFrame frame = new JFrame();
 	
 	// Text fields to add records
 	private JTextField possessionTextField = new JTextField(10);
 	private JTextField shotsTextField = new JTextField(10);
 
-	// Text field labels
-	JLabel possessionLabel = new JLabel(possessionFieldString);
-	JLabel shotsLabel = new JLabel(shotFieldString);
+	private JButton addRecord = new JButton("Add Record");
 
 	// JPanel
 	private JPanel panel = new JPanel();
-	private GridBagLayout gridbag = new GridBagLayout();
-    private GridBagConstraints c = new GridBagConstraints();
+	private JPanel fieldPanel = new JPanel(new GridLayout(2, 1));
+	private JPanel labelPanel = new JPanel(new GridLayout(2, 1));
 
-    // Create frame
-    private JFrame frame = new JFrame();
 
-    protected JLabel actionLabel;
-	
 	public View(String title) {
 
-		// set text labels to their text field
-		possessionLabel.setLabelFor(possessionTextField);
-		shotsLabel.setLabelFor(shotsTextField);
-
-		//set panel layout
-		panel.setLayout(gridbag);
-
-		JLabel[] labels = {possessionLabel, shotsLabel};
-		JTextField[] textFields = {possessionTextField, shotsTextField};
-		addLabelTextRows(labels, textFields, gridbag, panel);
-
-
-		//Create a label to put messages during an action event.
-        actionLabel = new JLabel("Type text");
-        actionLabel.setBorder(BorderFactory.createEmptyBorder(10,0,0,0));
-
-		c.gridwidth = GridBagConstraints.REMAINDER; //last
-        c.anchor = GridBagConstraints.WEST;
-        c.weightx = 1.0;
-
-        panel.add(actionLabel, c);
-
-		panel.setBorder(new BevelBorder(BevelBorder.RAISED));
+		
 		panel.add(possessionTextField);
 		panel.add(shotsTextField);
 
-		
+		panel.add(addRecord);
 
 		// add title in top
       	frame.setTitle(title);
@@ -68,10 +37,10 @@ public class View implements InterfaceView {
 
       	//frame.getContentPane().add(displayText.getMainComponent(), BorderLayout.CENTER);
       	//frame.getContentPane().add(statusBar.getComponent(), BorderLayout.PAGE_END);
-      	
+     
+     	frame.add(panel);
 
-      	//add panel to frame
-      	frame.add(panel);
+
 
 	}
 
@@ -82,27 +51,5 @@ public class View implements InterfaceView {
       	frame.setVisible(true);
     }
 
-
-    private void addLabelTextRows(JLabel[] labels,
-                                  JTextField[] textFields,
-                                  GridBagLayout gridbag,
-                                  Container container) {
-
-        GridBagConstraints c = new GridBagConstraints();
-        c.anchor = GridBagConstraints.EAST;
-        int numLabels = labels.length;
- 
-        for (int i = 0; i < numLabels; i++) {
-            c.gridwidth = GridBagConstraints.RELATIVE; //next-to-last
-            c.fill = GridBagConstraints.NONE;      //reset to default
-            c.weightx = 0.0;                       //reset to default
-            container.add(labels[i], c);
- 
-            c.gridwidth = GridBagConstraints.REMAINDER;     //end row
-            c.fill = GridBagConstraints.HORIZONTAL;
-            c.weightx = 1.0;
-            container.add(textFields[i], c);
-        }
-    }
 
 }
