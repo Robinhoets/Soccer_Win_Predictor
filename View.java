@@ -22,14 +22,27 @@ public class View implements InterfaceView {
 	private JPanel fieldPanel = new JPanel(new GridLayout(2, 1));
 	private JPanel labelPanel = new JPanel(new GridLayout(2, 1));
 
+	private JLabel jlbl1 = new JLabel();
+	private JLabel jlbl2 = new JLabel();
 
 	public View(String title) {
 
-		
+		jlbl1.setText("possession: ");
+		jlbl1.setVerticalTextPosition(JLabel.BOTTOM);
+        jlbl1.setHorizontalTextPosition(JLabel.CENTER);
+
+        jlbl2.setText("shots: ");
+		jlbl2.setVerticalTextPosition(JLabel.BOTTOM);
+        jlbl2.setHorizontalTextPosition(JLabel.CENTER);
+
+        panel.add(jlbl1);
+        panel.add(jlbl2);
+
 		panel.add(possessionTextField);
 		panel.add(shotsTextField);
 
 		panel.add(addRecord);
+
 
 		// add title in top
       	frame.setTitle(title);
@@ -39,8 +52,6 @@ public class View implements InterfaceView {
       	//frame.getContentPane().add(statusBar.getComponent(), BorderLayout.PAGE_END);
      
      	frame.add(panel);
-
-
 
 	}
 
