@@ -10,32 +10,17 @@ public class View implements InterfaceView {
 
 	// Create frame
     private static JFrame frame = new JFrame();
-	
-	// Text fields to add records
-	//private JTextField possessionTextField = new JTextField(10);
-	//private JTextField shotsTextField = new JTextField(10);
 
-	private JButton addRecord = new JButton("Add Record");
+    final static boolean RIGHT_TO_LEFT = false;
 
-	// JPanel
-	private JPanel panel = new JPanel();
-	private JPanel fieldPanel = new JPanel(new GridLayout(2, 1));
-	private JPanel labelPanel = new JPanel(new GridLayout(2, 1));
-
-	//private JLabel jlbl1 = new JLabel();
-	//private JLabel jlbl2 = new JLabel();
-
-	public View(String title) {
-
+	public View() {
 		//Set up the content pane.
         addComponentsToPane(frame.getContentPane());
 
 		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 	}
 
-
-	final static boolean RIGHT_TO_LEFT = false;
-
+	// set up our initial view
 	public static void addComponentsToPane(Container pane) {
 
 		if (RIGHT_TO_LEFT) {

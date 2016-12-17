@@ -3,7 +3,7 @@ import javax.swing.SwingUtilities;
 public class MvcMain {
 
    private static void createAndShowGui() {
-      View view = new View("Soccer Records");
+      View view = new View();
       //InterfaceModel model = new Model();
       Control control = new Control(view); // add (,model) later
 
