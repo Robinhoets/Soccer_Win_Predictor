@@ -9,7 +9,7 @@ import java.awt.*;
 public class View implements InterfaceView {
 
 	// Create frame
-    private JFrame frame = new JFrame();
+    private static JFrame frame = new JFrame();
 	
 	// Text fields to add records
 	//private JTextField possessionTextField = new JTextField(10);
@@ -30,35 +30,10 @@ public class View implements InterfaceView {
 		//Set up the content pane.
         addComponentsToPane(frame.getContentPane());
 
-		/*
-
-		jlbl1.setText("possession: ");
-		jlbl1.setVerticalTextPosition(JLabel.BOTTOM);
-        jlbl1.setHorizontalTextPosition(JLabel.CENTER);
-
-        jlbl2.setText("shots: ");
-		jlbl2.setVerticalTextPosition(JLabel.BOTTOM);
-        jlbl2.setHorizontalTextPosition(JLabel.CENTER);
-
-        panel.add(jlbl1);
-        panel.add(jlbl2);
-
-		panel.add(possessionTextField);
-		panel.add(shotsTextField);
-
-		panel.add(addRecord);
-
-
-		// add title in top
-      	frame.setTitle(title);
-      	frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-
-      	//frame.getContentPane().add(displayText.getMainComponent(), BorderLayout.CENTER);
-      	//frame.getContentPane().add(statusBar.getComponent(), BorderLayout.PAGE_END);
-     
-     	frame.add(panel);
-		*/
+		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 	}
+
+
 	final static boolean RIGHT_TO_LEFT = false;
 
 	public static void addComponentsToPane(Container pane) {
@@ -67,56 +42,51 @@ public class View implements InterfaceView {
             pane.setComponentOrientation(ComponentOrientation.RIGHT_TO_LEFT);
         }
 
+        // add title in top
+      	frame.setTitle("Soccer Records");
+
 		pane.setLayout(new GridBagLayout());
 
-		 JButton button;
-		 GridBagConstraints c = new GridBagConstraints();
+		JButton button;
+		GridBagConstraints c = new GridBagConstraints();
 	    if (false) {
 	    //natural height, maximum width
 	    c.fill = GridBagConstraints.NORTH;
 	    }
 	 
-	    button = new JButton("Button 1");
-	    c.fill = GridBagConstraints.HORIZONTAL;
-	    c.gridx = 0;
-	    c.gridy = 0;
-	    pane.add(button, c);
-
-	    button = new JButton("Button 2");
-	    c.fill = GridBagConstraints.HORIZONTAL;
-	    c.gridx = 0;
-	    c.gridy = 1;
-	    pane.add(button, c);
-	 
-	    button = new JButton("Button 3");
-	    c.fill = GridBagConstraints.HORIZONTAL;
-	    c.gridx = 0;
-	    c.gridy = 2;
-	    pane.add(button, c);
-
+	    // Labels
 	    JLabel jlbl1 = new JLabel("possession: ");
 		c.fill = GridBagConstraints.HORIZONTAL;
 	    c.gridx = 0;
-	    c.gridy = 3;
+	    c.gridy = 0;
 	    pane.add(jlbl1, c);	 
 
 	    JLabel jlbl2 = new JLabel("Shots: ");   
 	    c.fill = GridBagConstraints.HORIZONTAL;
 	    c.gridx = 0;
-	    c.gridy = 4;
+	    c.gridy = 1;
 	    pane.add(jlbl2, c);	
 
+	    // text fields
 	    JTextField possessionTextField = new JTextField(10);
 		c.fill = GridBagConstraints.HORIZONTAL;
 	    c.gridx = 1;
-	    c.gridy = 3;
+	    c.gridy = 0;
 	    pane.add(possessionTextField, c);
 
 	    JTextField shotsTextField = new JTextField(10);
 	    c.fill = GridBagConstraints.HORIZONTAL;
 	    c.gridx = 1;
-	    c.gridy = 4;
+	    c.gridy = 1;
 	    pane.add(shotsTextField, c);
+
+	    // Button positioning
+	    button = new JButton("Add Game");
+	    c.fill = GridBagConstraints.HORIZONTAL;
+	    c.gridx = 0;
+	    c.gridy = 2;
+	    pane.add(button, c);
+
 	}
 
 
