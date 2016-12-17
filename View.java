@@ -12,8 +12,8 @@ public class View implements InterfaceView {
     private JFrame frame = new JFrame();
 	
 	// Text fields to add records
-	private JTextField possessionTextField = new JTextField(10);
-	private JTextField shotsTextField = new JTextField(10);
+	//private JTextField possessionTextField = new JTextField(10);
+	//private JTextField shotsTextField = new JTextField(10);
 
 	private JButton addRecord = new JButton("Add Record");
 
@@ -22,8 +22,8 @@ public class View implements InterfaceView {
 	private JPanel fieldPanel = new JPanel(new GridLayout(2, 1));
 	private JPanel labelPanel = new JPanel(new GridLayout(2, 1));
 
-	private JLabel jlbl1 = new JLabel();
-	private JLabel jlbl2 = new JLabel();
+	//private JLabel jlbl1 = new JLabel();
+	//private JLabel jlbl2 = new JLabel();
 
 	public View(String title) {
 
@@ -93,8 +93,30 @@ public class View implements InterfaceView {
 	    c.gridx = 0;
 	    c.gridy = 2;
 	    pane.add(button, c);
-	
 
+	    JLabel jlbl1 = new JLabel("possession: ");
+		c.fill = GridBagConstraints.HORIZONTAL;
+	    c.gridx = 0;
+	    c.gridy = 3;
+	    pane.add(jlbl1, c);	 
+
+	    JLabel jlbl2 = new JLabel("Shots: ");   
+	    c.fill = GridBagConstraints.HORIZONTAL;
+	    c.gridx = 0;
+	    c.gridy = 4;
+	    pane.add(jlbl2, c);	
+
+	    JTextField possessionTextField = new JTextField(10);
+		c.fill = GridBagConstraints.HORIZONTAL;
+	    c.gridx = 1;
+	    c.gridy = 3;
+	    pane.add(possessionTextField, c);
+
+	    JTextField shotsTextField = new JTextField(10);
+	    c.fill = GridBagConstraints.HORIZONTAL;
+	    c.gridx = 1;
+	    c.gridy = 4;
+	    pane.add(shotsTextField, c);
 	}
 
 
