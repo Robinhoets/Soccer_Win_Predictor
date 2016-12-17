@@ -72,6 +72,13 @@ public class View implements InterfaceView {
 	    c.gridy = 2;
 	    pane.add(button, c);
 
+	    // Button positioning
+	    button = new JButton("Calculate");
+	    c.fill = GridBagConstraints.HORIZONTAL;
+	    c.gridx = 0;
+	    c.gridy = 3;
+	    pane.add(button, c);
+
 	}
 
 
