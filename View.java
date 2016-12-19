@@ -103,8 +103,8 @@ class ViewDisplayText {
 	private JButton calculateButton = new JButton("Calculte");
 	private JTextArea textArea = new JTextArea(20,20);
 
-	private JLabel possessionLabel = new JLabel("POSSESSION");
-	private JLabel shotsLabel = new JLabel("SHOTS");
+	private JLabel possessionLabel = new JLabel("   POSSESSION");
+	private JLabel shotsLabel = new JLabel("        SHOTS");
 	private JLabel passAccLabel = new JLabel("PASS ACCURACY");
 
 	private JTextField possessionText = new JTextField(10);
@@ -140,6 +140,10 @@ class ViewDisplayText {
 		addRecordButton.setAction(action);
 	}
 
+	public void setCalculateAction(Action action) {
+		calculateButton.setAction(action);
+	}
+
 	public String getTextAreaText() {
       return textArea.getText();
     }
@@ -149,23 +153,4 @@ class ViewDisplayText {
    	}
 
 
-}
-
-
-class Calculated {
-
-	private static final String CALC = "Calculated: ";
-	private JLabel lab = new JLabel(CALC);
-
-	public Calculated () {
-		lab.setBorder(BorderFactory.createLineBorder(Color.BLACK));
-	}
-
-	public JComponent getComponent() {
-		return lab;
-	}
-
-	public void  setText(String text) {
-		lab.setText(CALC);
-	}
 }
