@@ -96,6 +96,8 @@ public class View implements InterfaceView {
 class ViewDisplayText {
 
 	private JPanel mainPanel = new JPanel();
+	private JButton addRecordButton = new JButton();
+	private JButton calculateButton = new JButton();
 
 	public ViewDisplayText() {
 
