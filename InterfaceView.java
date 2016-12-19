@@ -1,5 +1,7 @@
 import java.awt.Window;
-import javax.swing.Action;
+import javax.swing.*;
+import javax.swing.border.BevelBorder;
+import java.awt.*;
 
 public interface InterfaceView {
 

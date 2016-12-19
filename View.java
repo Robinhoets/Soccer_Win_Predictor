@@ -13,15 +13,19 @@ public class View implements InterfaceView {
 
     final static boolean RIGHT_TO_LEFT = false;
 
+    private Calculated calcSuccess = new Calculated();
+
 	public View() {
 		//Set up the content pane.
         addComponentsToPane(frame.getContentPane());
-
+        // close when exited
 		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+
+		frame.getContentPane().add(calcSuccess.getComponent(), GridBagConstraints.HORIZONTAL);
 	}
 
 	// set up our initial view
-	public static void addComponentsToPane(Container pane) {
+	public void addComponentsToPane(Container pane) {
 
 		if (RIGHT_TO_LEFT) {
             pane.setComponentOrientation(ComponentOrientation.RIGHT_TO_LEFT);
@@ -86,4 +90,23 @@ public class View implements InterfaceView {
     }
 
 
+}
+
+
+class Calculated {
+
+	private static final String CALC = "Calculated: ";
+	private JLabel lab = new JLabel(CALC);
+
+	public Calculated () {
+		lab.setBorder(BorderFactory.createLineBorder(Color.BLACK));
+	}
+
+	public JComponent getComponent() {
+		return lab;
+	}
+
+	public void  setText(String text) {
+		lab.setText(CALC);
+	}
 }
