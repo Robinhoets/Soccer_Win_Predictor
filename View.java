@@ -52,6 +52,12 @@ public class View implements InterfaceView {
 	    c.gridy = 1;
 	    pane.add(jlbl2, c);	
 
+	    JLabel jlbl3 = new JLabel("Pass Accuracy: ");   
+	    c.fill = GridBagConstraints.HORIZONTAL;
+	    c.gridx = 0;
+	    c.gridy = 2;
+	    pane.add(jlbl3, c);	
+
 	    // text fields
 	    JTextField possessionTextField = new JTextField(10);
 		c.fill = GridBagConstraints.HORIZONTAL;
@@ -65,19 +71,45 @@ public class View implements InterfaceView {
 	    c.gridy = 1;
 	    pane.add(shotsTextField, c);
 
+	    JTextField passAccTextField = new JTextField(10);
+	    c.fill = GridBagConstraints.HORIZONTAL;
+	    c.gridx = 1;
+	    c.gridy = 2;
+	    pane.add(passAccTextField, c);
+
 	    // Button positioning
 	    button = new JButton("Add Game");
 	    c.fill = GridBagConstraints.HORIZONTAL;
 	    c.gridx = 0;
-	    c.gridy = 2;
+	    c.gridy = 3;
 	    pane.add(button, c);
 
 	    // Button positioning
 	    button = new JButton("Calculate");
 	    c.fill = GridBagConstraints.HORIZONTAL;
-	    c.gridx = 0;
+	    c.gridx = 1;
 	    c.gridy = 3;
 	    pane.add(button, c);
+	    
+	    JButton b;
+	    String buttonTitle = "none";
+	    for(int i=4; i<=6; i++) {
+
+
+	    	if(i==4)
+	    		buttonTitle = "number 1";
+	    	else if(i==5)
+	    		buttonTitle = "number 2";
+	    	else if(i==6)
+	    		buttonTitle = "number 3";
+
+	    	b = new JButton(buttonTitle);
+
+	    	c.fill = GridBagConstraints.HORIZONTAL;
+	    	c.gridx = 0;
+	    	c.gridy = i;
+	    	pane.add(b, c);
+	    }
 
 	}
 
