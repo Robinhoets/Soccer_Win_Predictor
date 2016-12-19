@@ -93,6 +93,18 @@ public class View implements InterfaceView {
 }
 
 
+class ViewDisplayText {
+
+	private JPanel mainPanel = new JPanel();
+
+	public ViewDisplayText() {
+
+	}
+
+
+}
+
+
 class Calculated {
 
 	private static final String CALC = "Calculated: ";

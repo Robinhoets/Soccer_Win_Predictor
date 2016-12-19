@@ -8,5 +8,7 @@ Add to InterfaceModel as requirements become more clear
 Create View (DONE)
 Create Model (DONE)
 
-Add to View as needed 
+Add to View as needed - 
+	finish ViewDisplayText class in View.java
+
 Add to Model as needed
