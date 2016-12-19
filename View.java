@@ -31,86 +31,50 @@ public class View implements InterfaceView {
       	frame.setTitle("Soccer Records");
 
 		pane.setLayout(new GridBagLayout());
-
-		JButton button;
 		GridBagConstraints c = new GridBagConstraints();
-	    if (false) {
-	    //natural height, maximum width
-	    c.fill = GridBagConstraints.NORTH;
-	    }
-	 
-	    // Labels
-	    JLabel jlbl1 = new JLabel("possession: ");
-		c.fill = GridBagConstraints.HORIZONTAL;
-	    c.gridx = 0;
-	    c.gridy = 0;
-	    pane.add(jlbl1, c);	 
 
-	    JLabel jlbl2 = new JLabel("Shots: ");   
-	    c.fill = GridBagConstraints.HORIZONTAL;
-	    c.gridx = 0;
-	    c.gridy = 1;
-	    pane.add(jlbl2, c);	
+	    JLabel label;
+	    JTextField textField;
+	    JButton button;
+	    String textTitle = "";
+	    for(int i=0; i<=2; i++) {
 
-	    JLabel jlbl3 = new JLabel("Pass Accuracy: ");   
-	    c.fill = GridBagConstraints.HORIZONTAL;
-	    c.gridx = 0;
-	    c.gridy = 2;
-	    pane.add(jlbl3, c);	
+	    	if(i==0)
+	    		textTitle = "Possession: ";
+	    	else if(i==1) {
+	    		textTitle = "Shots:";
 
-	    // text fields
-	    JTextField possessionTextField = new JTextField(10);
-		c.fill = GridBagConstraints.HORIZONTAL;
-	    c.gridx = 1;
-	    c.gridy = 0;
-	    pane.add(possessionTextField, c);
+	    		// add 'add game' button
+	    		button = new JButton("Add Game");
+	    		c.fill = GridBagConstraints.HORIZONTAL;
+	   			c.gridx = 0;
+	    		c.gridy = 3;
+	    		pane.add(button, c);
+	    	}
+	    	else if(i==2) {
+	    		textTitle = "Pass Accuracy: ";
 
-	    JTextField shotsTextField = new JTextField(10);
-	    c.fill = GridBagConstraints.HORIZONTAL;
-	    c.gridx = 1;
-	    c.gridy = 1;
-	    pane.add(shotsTextField, c);
+	    		// add 'add game' button
+	    		button = new JButton("Calculate");
+	    		c.fill = GridBagConstraints.HORIZONTAL;
+	   			c.gridx = 1;
+	    		c.gridy = 3;
+	    		pane.add(button, c);
+	    	}
 
-	    JTextField passAccTextField = new JTextField(10);
-	    c.fill = GridBagConstraints.HORIZONTAL;
-	    c.gridx = 1;
-	    c.gridy = 2;
-	    pane.add(passAccTextField, c);
-
-	    // Button positioning
-	    button = new JButton("Add Game");
-	    c.fill = GridBagConstraints.HORIZONTAL;
-	    c.gridx = 0;
-	    c.gridy = 3;
-	    pane.add(button, c);
-
-	    // Button positioning
-	    button = new JButton("Calculate");
-	    c.fill = GridBagConstraints.HORIZONTAL;
-	    c.gridx = 1;
-	    c.gridy = 3;
-	    pane.add(button, c);
-	    
-	    JButton b;
-	    String buttonTitle = "none";
-	    for(int i=4; i<=6; i++) {
-
-
-	    	if(i==4)
-	    		buttonTitle = "number 1";
-	    	else if(i==5)
-	    		buttonTitle = "number 2";
-	    	else if(i==6)
-	    		buttonTitle = "number 3";
-
-	    	b = new JButton(buttonTitle);
-
+	    	// Add Labels
+		    label = new JLabel(textTitle);
+			c.fill = GridBagConstraints.HORIZONTAL;
+		    c.gridx = 0;
+		    c.gridy = i;
+		    pane.add(label, c);	
+		    // Add text fields
+		    textField = new JTextField(10);
 	    	c.fill = GridBagConstraints.HORIZONTAL;
-	    	c.gridx = 0;
+	    	c.gridx = 1;
 	    	c.gridy = i;
-	    	pane.add(b, c);
+	    	pane.add(textField, c);
 	    }
-
 	}
 
 
