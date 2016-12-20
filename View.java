@@ -18,12 +18,9 @@ public class View implements InterfaceView {
     ViewDisplayText dislpayText = new ViewDisplayText();
 
 	public View() {
-		//Set up the content pane.
-        //addComponentsToPane(frame.getContentPane());
         // close when exited
 		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 
-		//frame.getContentPane().add(calcSuccess.getComponent(), GridBagConstraints.HORIZONTAL);
 		frame.getContentPane().add(dislpayText.getMainComponent(), BorderLayout.CENTER);
 	}
 
@@ -35,5 +32,24 @@ public class View implements InterfaceView {
       	frame.setVisible(true);
     }
 
+    @Override
+    public void setAddRecordAction(Action action) {
+    	dislpayText.setAddRecordButtonAction(action);
+    }
+
+    @Override
+    public void setCalculateAction(Action action) {
+    	dislpayText.setCalculateButtonAction(action);
+    }
+
+    @Override
+    public void setTextAreaText(String text) {
+    	dislpayText.setTextAreaText(text);
+    }
+
+    @Override
+    public void getTextAreaText() {
+    	dislpayText.getTextAreaText();
+    }
 
 }

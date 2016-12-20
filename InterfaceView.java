@@ -7,4 +7,12 @@ public interface InterfaceView {
 	
 	void setVisible(boolean visible);
 
+	void setAddRecordAction(Action action);
+
+	void setCalculateAction(Action action);
+
+	void setTextAreaText(String text);
+
+	void getTextAreaText();
+
 }
