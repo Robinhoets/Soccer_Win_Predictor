@@ -22,11 +22,9 @@ class AddRecordAction extends AbstractAction {
 	@Override
    	public void actionPerformed(ActionEvent evt) {
 
-		view.setTextAreaText("Button worked");
-
-		String poss = view.getPossessionTextAreaText();
-		String shot = view.getShotTextAreaText();
-		String passAcc = view.getPassAccTextAreaText();
+		int poss = view.getPossessionTextAreaText();
+		int shot = view.getShotTextAreaText();
+		int passAcc = view.getPassAccTextAreaText();
 
 		view.setTextAreaText(poss + "\n" + shot + "\n" + passAcc);
 
