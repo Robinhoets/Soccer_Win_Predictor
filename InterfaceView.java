@@ -15,10 +15,10 @@ public interface InterfaceView {
 
 	void getTextAreaText();
 
-	String getPossessionTextAreaText();
+	int getPossessionTextAreaText();
 
-	String getShotTextAreaText();
+	int getShotTextAreaText();
 
-	String getPassAccTextAreaText();
+	int getPassAccTextAreaText();
 
 }

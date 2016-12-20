@@ -47,17 +47,17 @@ public class View implements InterfaceView {
     }
 
     @Override
-    public String getPossessionTextAreaText() {
+    public int getPossessionTextAreaText() {
     	return dislpayText.getPossessionTextAreaText();
     }
 
     @Override
-    public String getShotTextAreaText() {
+    public int getShotTextAreaText() {
     	return dislpayText.getShotTextAreaText();
     }
 
     @Override
-    public String getPassAccTextAreaText() {
+    public int getPassAccTextAreaText() {
     	return dislpayText.getPassAccTextAreaText();
     }
 

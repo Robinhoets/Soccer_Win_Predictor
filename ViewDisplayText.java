@@ -62,15 +62,19 @@ class ViewDisplayText {
    	   textArea.setText(text);
    	}
 
-   	public String getPossessionTextAreaText() {
-    	return possessionText.getText();
+   	public int getPossessionTextAreaText() {
+    	return textToInteger(possessionText.getText());
     }
 
-    public String getShotTextAreaText() {
-    	return shotsText.getText();
+    public int getShotTextAreaText() {
+    	return textToInteger(shotsText.getText());
     }
 
-    public String getPassAccTextAreaText() {
-    	return passAccuracyText.getText();
+    public int getPassAccTextAreaText() {
+    	return textToInteger(passAccuracyText.getText());
+    }
+
+    public int textToInteger(String text) {
+    	return Integer.parseInt(text);
     }
 }
