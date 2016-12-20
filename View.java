@@ -10,20 +10,15 @@ public class View implements InterfaceView {
 
 	// Create frame
     private static JFrame frame = new JFrame();
-
     final static boolean RIGHT_TO_LEFT = false;
-
     private Calculated calcSuccess = new Calculated();
-
-    ViewDisplayText dislpayText = new ViewDisplayText();
+    private ViewDisplayText dislpayText = new ViewDisplayText();
 
 	public View() {
         // close when exited
 		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-
 		frame.getContentPane().add(dislpayText.getMainComponent(), BorderLayout.CENTER);
 	}
-
 
 	@Override
    	public void setVisible(boolean visible) {
