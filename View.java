@@ -11,7 +11,6 @@ public class View implements InterfaceView {
 	// Create frame
     private static JFrame frame = new JFrame();
     final static boolean RIGHT_TO_LEFT = false;
-    private Calculated calcSuccess = new Calculated();
     private ViewDisplayText dislpayText = new ViewDisplayText();
 
 	public View() {
@@ -45,6 +44,21 @@ public class View implements InterfaceView {
     @Override
     public void getTextAreaText() {
     	dislpayText.getTextAreaText();
+    }
+
+    @Override
+    public String getPossessionTextAreaText() {
+    	return dislpayText.getPossessionTextAreaText();
+    }
+
+    @Override
+    public String getShotTextAreaText() {
+    	return dislpayText.getShotTextAreaText();
+    }
+
+    @Override
+    public String getPassAccTextAreaText() {
+    	return dislpayText.getPassAccTextAreaText();
     }
 
 }

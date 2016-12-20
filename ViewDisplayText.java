@@ -62,5 +62,15 @@ class ViewDisplayText {
    	   textArea.setText(text);
    	}
 
+   	public String getPossessionTextAreaText() {
+    	return possessionText.getText();
+    }
 
+    public String getShotTextAreaText() {
+    	return shotsText.getText();
+    }
+
+    public String getPassAccTextAreaText() {
+    	return passAccuracyText.getText();
+    }
 }

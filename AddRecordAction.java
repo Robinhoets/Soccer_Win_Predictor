@@ -13,16 +13,23 @@ class AddRecordAction extends AbstractAction {
 	private View view;
 	private Model model;
 
-	public AddRecordAction(View view, Model model) {
+	public AddRecordAction(View view, Model model, String name) {
+		super(name);
 		this.view = view;
 		this.model = model;
 	}
 
 	@Override
-   public void actionPerformed(ActionEvent evt) {
+   	public void actionPerformed(ActionEvent evt) {
 
-   	view.setTextAreaText("Button worked");
+		view.setTextAreaText("Button worked");
 
-   }
+		String poss = view.getPossessionTextAreaText();
+		String shot = view.getShotTextAreaText();
+		String passAcc = view.getPassAccTextAreaText();
+
+		view.setTextAreaText(poss + "\n" + shot + "\n" + passAcc);
+
+   	}
 	
 }
