@@ -8,8 +8,10 @@ public class Control {
 		this.model = model;
 
 
-		view.setAddRecordAction(new AddRecordAction());	// create class Add Record Action
-		view.setCalculateAction(new CalculateAction());	// create class Add Record Action
+		view.setAddRecordAction(new AddRecordAction(view, model));	// create class Add Record Action
+		//view.setCalculateAction(new CalculateAction());	// create class Add Record Action
+
+		//model.addPropertyChangeListener(new ModelListener(view, model));	// create class model Listener
 	}
 
 	public void showView(boolean visible) {
