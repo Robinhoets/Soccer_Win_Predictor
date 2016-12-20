@@ -9,12 +9,14 @@ import java.util.ArrayList;
 
 
 @SuppressWarnings("serial")
-class AddRecordAction extends AbstractAction {
+class CalculateAction extends AbstractAction { 
 
 	private View view;
 	private Model model;
 
-	public AddRecordAction(View view, Model model, String name) {
+	private ArrayList<Game> gameList;
+
+	public CalculateAction(View view, Model model, String name) {
 		super(name);
 		this.view = view;
 		this.model = model;
@@ -23,15 +25,13 @@ class AddRecordAction extends AbstractAction {
 	@Override
    	public void actionPerformed(ActionEvent evt) {
 
-		int possession = view.getPossessionTextAreaText();
-		int shots = view.getShotTextAreaText();
-		int passAccurracy = view.getPassAccTextAreaText();
+   		gameList = model.getGameList();
 
-		//view.setTextAreaText(poss + "\n" + shot + "\n" + passAcc);
-
-		Game game = new Game(possession, shots, passAccurracy);
-		model.addGame(game);
+		for(int i=0; i<gameList.size(); i++) {
+			view.setTextAreaText(gameList.get(i).toString());
+			System.out.println(gameList.get(i).toString());
+		}
 
    	}
-	
+
 }

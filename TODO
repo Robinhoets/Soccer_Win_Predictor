@@ -9,8 +9,8 @@ Create View (DONE)
 Create Model (DONE)
 
 Add to View as needed - 
-	finish ViewDisplayText class in View.java
+	finish ViewDisplayText class in View.java (done)
 
-Add to Model as needed - create class Add Record Action
-						 create class Add Record Action
-						 create class model Listener
+Add to Model as needed - fix CalculateAction Bug (done)
+
+Program now adds records to arrayList correctly. Start working on Statistical models

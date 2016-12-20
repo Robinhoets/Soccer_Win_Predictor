@@ -1,22 +1,23 @@
+import java.util.ArrayList;
+
 import java.beans.PropertyChangeListener;
 import javax.swing.event.SwingPropertyChangeSupport;
 
 public class Model implements InterfaceModel {
+
+	private ArrayList<Game> gameList = new ArrayList<Game>();
 	
-	private String text;
 	private SwingPropertyChangeSupport propChangeSupport = new SwingPropertyChangeSupport(this);
 
+	
 	@Override
-	public String getText() {
-		return text;
+	public void addGame(Game game) {
+		gameList.add(game);
 	}
 
 	@Override
-	public void setText(String text) {
-		String newValue = text;
-		String oldValue = this.text;
-		this.text = newValue;
-		propChangeSupport.firePropertyChange(text, oldValue, newValue);
+	public ArrayList<Game> getGameList() {
+		return gameList;
 	}
 
 	@Override

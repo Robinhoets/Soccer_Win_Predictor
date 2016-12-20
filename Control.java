@@ -9,7 +9,7 @@ public class Control {
 
 
 		view.setAddRecordAction(new AddRecordAction(view, model, "Add Record"));	// create class Add Record Action
-		//view.setCalculateAction(new CalculateAction());	// create class Add Record Action
+		view.setCalculateAction(new CalculateAction(view, model, "Calculate"));	// create class Add Record Action
 
 		//model.addPropertyChangeListener(new ModelListener(view, model));	// create class model Listener
 	}

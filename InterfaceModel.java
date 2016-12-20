@@ -1,10 +1,11 @@
 import java.beans.PropertyChangeListener;
+import java.util.ArrayList;
 
 public interface InterfaceModel {
 	
-	String getText();
-	
-	void setText(String text);
+	void addGame(Game game);
+
+	ArrayList<Game> getGameList();
 
 	void addPropertyChangeListener(PropertyChangeListener listener);
 

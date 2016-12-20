@@ -2,12 +2,14 @@
 
 public class Game{
 	
-	int possession;
-	int shots;
+	private int possession;
+	private int shots;
+	private int passAccuracy;
 
-	public Game(int possesion, int shots) {
+	public Game(int possession, int shots, int passAccuracy) {
 		this.possession = possession;
 		this.shots = shots;
+		this.passAccuracy = passAccuracy;
 	}
 
 
@@ -17,6 +19,14 @@ public class Game{
 
 	public int getShots(){
 		return shots;
+	}
+
+	public int getPassAccuracy() {
+		return passAccuracy;
+	}
+
+	public String toString() {
+		return possession + " " + shots + " " + passAccuracy;
 	}
 	
 }
