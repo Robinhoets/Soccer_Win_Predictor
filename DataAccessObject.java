@@ -6,6 +6,7 @@ import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.sql.Statement;
 import java.util.Date;
+import javax.sql.rowset.JdbcRowSet;
 
 public class DataAccessObject {
 	
@@ -13,13 +14,43 @@ public class DataAccessObject {
     private Statement statement = null;
     private PreparedStatement preparedStatement = null;
     private ResultSet resultSet = null;
-
+    private JdbcRowSet rowSet = null;
 
     public void addRecord(Game game) {
-    	
-    	
-    }
 
+    	try{
+
+    		// create a mysql database connection
+      		//String myDriver = "org.gjt.mm.mysql.Driver";
+    		String myDriver = "com.mysql.jdbc.Driver";
+    	    // Setup the connection with the DB
+    	    String myUrl = "jdbc:mysql://localhost/soccer_games";
+    	    Class.forName(myDriver);
+    	    Connection conn = DriverManager.getConnection(myUrl, "root", "Stardog8*");
+
+    	    // the mysql insert statement
+      		String query = " insert into madeUpTeam(possession, shots, passAccuracy)"
+        	+ " values (?, ?, ?)";
+
+        	// create the mysql insert preparedstatement
+      		PreparedStatement preparedStmt = conn.prepareStatement(query);
+      		preparedStmt.setInt (1, game.getPossession());
+      		preparedStmt.setInt (2, game.getShots());
+      		preparedStmt.setInt (3, game.getPassAccuracy());
+
+      		// execute the preparedstatement
+      		preparedStmt.execute();
+      
+      		conn.close();
+
+
+    	} catch (Exception e)
+    		{
+      			System.err.println("Got an exception!");
+      			System.err.println(e.getMessage());
+    		}
+    }
+    /*
     public void readDatabase() throws Exception {
     	try{
     		
@@ -83,6 +114,6 @@ public class DataAccessObject {
     public ResultSet getResultSet() {
     	return resultSet;
     }
-    
+    */
 
 }
