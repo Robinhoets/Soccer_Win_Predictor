@@ -13,4 +13,7 @@ Add to View as needed -
 
 Add to Model as needed - fix CalculateAction Bug (done)
 
-Program now adds records to arrayList correctly. Start working on Statistical models
+Program now adds records to arrayList correctly. Start working on Statistical models (done)
+
+Program now adds records to MySql database - work on statistical methods
+										   - work on reading form database when calculate button pushed
