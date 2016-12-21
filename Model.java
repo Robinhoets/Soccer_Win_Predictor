@@ -9,6 +9,18 @@ public class Model implements InterfaceModel {
 	
 	private SwingPropertyChangeSupport propChangeSupport = new SwingPropertyChangeSupport(this);
 
+
+
+	// Database section
+	DataAccessObject dataAccessObject = new DataAccessObject();
+
+	public void addRecord(Game game) {
+		dataAccessObject.addRecord(game);
+	}
+	// End of database section
+
+
+
 	
 	@Override
 	public void addGame(Game game) {

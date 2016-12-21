@@ -32,6 +32,9 @@ class AddRecordAction extends AbstractAction {
 		Game game = new Game(possession, shots, passAccurracy);
 		model.addGame(game);
 
+		// database part
+		model.addRecord(game);
+
    	}
 	
 }
