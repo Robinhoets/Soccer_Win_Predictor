@@ -17,3 +17,44 @@ Program now adds records to arrayList correctly. Start working on Statistical mo
 
 Program now adds records to MySql database - work on statistical methods
 										   - work on reading form database when calculate button pushed
+
+
+Stats to add:
+			fouls
+			*yellow cards (for/against)
+			*red cards (for/against)
+			*subs (before 85 min)
+			*offsides
+			rank in table (both team)
+			*formation (both teams)
+
+			*goals:	
+				scored
+				against
+				first half / second half
+
+				kinds:
+					counter attack
+					open play
+					set piece
+					penalty
+					own goal
+
+			*pass success:
+				short pass
+				long pass
+				cross
+				through ball
+
+			*home / away game
+			*Arial duels won
+			shots conceded
+			*shots blocked
+			*tackles per game
+			*interceptions
+			*shots
+			shots on target
+			*dribbles won
+			fouls working
+
+			*win / loss
