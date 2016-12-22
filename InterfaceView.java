@@ -21,4 +21,6 @@ public interface InterfaceView {
 
 	int getPassAccTextAreaText();
 
+	void resetTextBoxes();
+
 }

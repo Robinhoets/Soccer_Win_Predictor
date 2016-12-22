@@ -61,4 +61,9 @@ public class View implements InterfaceView {
     	return dislpayText.getPassAccTextAreaText();
     }
 
+    @Override
+    public void resetTextBoxes() {
+    	dislpayText.resetTextBoxes();
+    }
+
 }

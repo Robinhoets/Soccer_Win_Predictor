@@ -77,4 +77,10 @@ class ViewDisplayText {
     public int textToInteger(String text) {
     	return Integer.parseInt(text);
     }
+
+    public void resetTextBoxes() {
+    	possessionText.setText("");
+    	shotsText.setText("");
+    	passAccuracyText.setText("");
+    }
 }
