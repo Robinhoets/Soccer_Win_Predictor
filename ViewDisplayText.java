@@ -166,7 +166,7 @@ class ViewDisplayText {
 		textAndLabelPanel.add(foulsWonText);
 
 		textAndLabelPanel.add(tacklesText);
-		textAndLabelPanel.add(interceptionsTextl);
+		textAndLabelPanel.add(interceptionsText);
 		textAndLabelPanel.add(clearanceText);
 		textAndLabelPanel.add(shotsBlockedText);
 		textAndLabelPanel.add(shotsConcededText);
@@ -215,108 +215,108 @@ class ViewDisplayText {
    	// text from text boxes
    	// Cards and fouls section
 	public int getYellowCardsTextAreaText() {
-		return yellowCardsText;
+		return textToInteger(yellowCardsText.getText());
 	}
 	public int getRedCardsTextAreaText() {
-		return redCardsText;
+		return textToInteger(redCardsText.getText());
 	}
 	public int getFoulsTextAreaText() {
-		return foulsText;
+		return textToInteger(foulsText.getText());
 	}
 
 	// corners, offsides, possession, passing
 	public int getCornersTextAreaText() {
-		return cornersText;
+		return textToInteger(cornersText.getText());
 	}
 	public int getOffsidesTextAreaText() {
-		return offsidesText;
+		return textToInteger(offsidesText.getText());
 	}
 	public int getPossessionPercentTextAreaText() {
-		return possessionPercentText;
+		return textToInteger(possessionPercentAccuracyText.getText());
 	}
 	public int getPassAccuracyPercentTextAreaText() {
-		return passAccuracyPercentText;
+		return textToInteger(passAccuracyPercentText.getText());
 	}
 
 	// tactical formation
 	public int getFormationTextAreaText() {
-		return formationText;
+		return textToInteger(formationText.getText());
 	}
 	public int getOpponentsFormationTextAreaText() {
-		return opponentsFormationText;
+		return textToInteger(opponentsFormationText.getText());
 	}
 
 	// goals formation
 	public int getGoalsTextAreaText() {
-		return goalsText;
+		return textToInteger(goalsText.getText());
 	}
 	public int getGoalsScoredCounterAttackTextAreaText() {
-		return goalsScoredCounterAttackText;
+		return textToInteger(goalsScoredCounterAttackText.getText());
 	}
 	public int getGoalsScoredOpenPlayTextAreaText() {
-		return goalsScoredOpenPlayText;
+		return textToInteger(goalsScoredOpenPlayText.getText());
 	}
 	public int getGoalsScoredSetPieceTextAreaText() {
-		return goalsScoredSetPieceText;
+		return textToInteger(goalsScoredSetPieceText.getText());
 	}
 	public int getGoalsScoredPenaltyTextAreaText() {
-		return getGoalsScoredPenaltyText;
+		return textToInteger(goalsScoredPenaltyText.getText());
 	}
 
 	// offensive moves
 	public int getShotsTextAreaText(){
-		return shotsText;
+		return textToInteger(shotsText.getText());
 	}
 	public int getShotsOnTargetTextAreaText() {
-		return shotsOnTargetText;
+		return textToInteger(shotsOnTargetText.getText());
 	}
 	public int getDribblesWonTextAreaText() {
-		return dribblesWonText;
+		return textToInteger(dribblesWonText.getText());
 	}
 	public int getFoulsWonTextAreaText() {
-		return foulsWonText;
+		return textToInteger(foulsWonText.getText());
 	}
 
 	// defensive moves
 	public int getTacklesTextAreaText() {
-		return tacklesText;
+		return textToInteger(tacklesText.getText());
 	}
 	public int getInterceptionsTextAreaText() {
-		return interceptionsText;
+		return textToInteger(interceptionsText.getText());
 	}
 	public int getClearanceTextAreaText() {
-		return clearanceText;
+		return textToInteger(clearanceText.getText());
 	}
 	public int getShotsBlockedTextAreaText() {
-		return shotsBlockedText;
+		return textToInteger(shotsBlockedText.getText());
 	}
 	public int getShotsConcededTextAreaText() {
-		return shotsConcededText;
+		return textToInteger(shotsConcededText.getText());
 	}
 
 	// passing
 	public int getTotalPassesTextAreaText() {
-		return totalPassesText;
+		return textToInteger(totalPassesText.getText());
 	}
 	public int getPassSuccessPercentTextAreaText() {
-		return passSuccessPercentText;
+		return textToInteger(passSuccessPercentText.getText());
 	}
 	public int getCrossPassTextAreaText() {
-		return crossPassText;
+		return textToInteger(crossPassText.getText());
 	}
 	public int getThroughBallPassTextAreaText() {
-		return throughBallPassText;
+		return textToInteger(throughBallPassText.getText());
 	}
 	public int getLongBallPassTextAreaText() {
-		return longBallPassText;
+		return textToInteger(longBallPassText.getText());
 	}
 	public int getShortPassTextAreaText() {
-		return shortPassText;
+		return textToInteger(shortPassText.getText());
 	}
 
 	//win or loss
 	public int getWinTextAreaText() {
-		return winText;
+		return textToInteger(winText.getText());
 	}
 
 
@@ -333,7 +333,7 @@ class ViewDisplayText {
 
 		cornersText.setText("");
 		offsidesText.setText("");
-		possessionPercentText.setText("");
+		possessionPercentAccuracyText.setText("");
 		passAccuracyPercentText.setText("");
 
 		formationText.setText("");
@@ -344,7 +344,7 @@ class ViewDisplayText {
 		goalsScoredOpenPlayText.setText("");
 		goalsScoredSetPieceText.setText("");
 		goalsScoredPenaltyText.setText("");
-		ownGoalsText.setText("");
+		ownGoalText.setText("");
 
 		shotsText.setText("");
 		shotsOnTargetText.setText("");
@@ -363,7 +363,7 @@ class ViewDisplayText {
 		throughBallPassText.setText("");
 		longBallPassText.setText("");
 		shortPassText.setText("");
-		
+
 		winText.setText("");
     }
 }

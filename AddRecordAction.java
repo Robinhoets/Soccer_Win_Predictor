@@ -22,16 +22,16 @@ class AddRecordAction extends AbstractAction {
 
 	@Override
    	public void actionPerformed(ActionEvent evt) {
-
+   		/*
 		int possession = view.getPossessionTextAreaText();
 		int shots = view.getShotTextAreaText();
 		int passAccurracy = view.getPassAccTextAreaText();
-
-		//view.setTextAreaText(poss + "\n" + shot + "\n" + passAcc);
+		
 
 		Game game = new Game(possession, shots, passAccurracy);
 		model.addGame(game);
-
+		*/
+		
 		// database part
 		model.addRecord(game);
 

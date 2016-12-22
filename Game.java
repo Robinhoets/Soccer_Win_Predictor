@@ -108,7 +108,7 @@ public class Game{
 		return goalsScoredSetPiece;
 	}
 	public int getGoalsScoredPenalty() {
-		return getGoalsScoredPenalty;
+		return goalsScoredPenalty;
 	}
 
 	// offensive moves
