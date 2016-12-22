@@ -15,11 +15,6 @@ public interface InterfaceView {
 
 	void getTextAreaText();
 
-	int getPossessionTextAreaText();
-
-	int getShotTextAreaText();
-
-	int getPassAccTextAreaText();
 
 	void resetTextBoxes();
 
