@@ -8,7 +8,8 @@ public class Game{
 				goals, goalsScoredCounterAttack, goalsScoredOpenPlay, goalsScoredSetPiece, goalsScoredPenalty, ownGoals, 
 				shots, shotsOnTarget, dribblesWon, foulsWon,
 				tackles, interceptions, clearance, shotsBlocked, shotsConceded,
-				totalPasses, passSuccessPercent, crossPass, throughBallPass, longBallPass, shortPass;
+				totalPasses, passSuccessPercent, crossPass, throughBallPass, longBallPass, shortPass
+				win;
 	
 
 	public Game(int yellowCards, int redCards, int fouls,
@@ -17,7 +18,8 @@ public class Game{
 				int goals, int goalsScoredCounterAttack, int goalsScoredOpenPlay, int goalsScoredSetPiece, int goalsScoredPenalty, int ownGoals,
 				int shots, int shotsOnTarget, int dribblesWon, int foulsWon,
 				int tackles, int interceptions, int clearance, int shotsBlocked, int shotsConceded,
-				int totalPasses, int passSuccessPercent, int crossPass, int throughBallPass, int longBallPass, int shortPass) 
+				int totalPasses, int passSuccessPercent, int crossPass, int throughBallPass, int longBallPass, int shortPass
+				int win) 
 	{
 		this.yellowCards = yellowCards;
 		this.redCards = redCards;
@@ -55,6 +57,8 @@ public class Game{
 		this.throughBallPass = throughBallPass;
 		this.longBallPass = longBallPass;
 		this.shortPass = shortPass;
+
+		this.win = win;
 	}
 
 	// Cards and fouls section
@@ -158,6 +162,11 @@ public class Game{
 		return shortPass;
 	}
 
+	//win or loss
+	public int getWin() {
+		return win;
+	}
+
 	public String toString() {
 		return yellowCards + " " + redCards + " " + fouls + "\n" + 
 				corners + " " + offsides + " " + possessionPercent + " " + passAccuracyPercent + "\n" + 
@@ -165,7 +174,8 @@ public class Game{
 				goals + " " + goalsScoredCounterAttack + " " + goalsScoredOpenPlay + " " + goalsScoredSetPiece + " " + goalsScoredPenalty + " " + ownGoals + "\n" + 
 				shots + " " + shotsOnTarget + " " + dribblesWon + " " + foulsWon + "\n" + 
 				tackles + " " + interceptions + " " + clearance + " " + shotsBlocked + " " + shotsConceded + "\n" + 
-				totalPasses + " " + passSuccessPercent + " " + crossPass + " " + throughBallPass + " " + longBallPass + " " + shortPass;
+				totalPasses + " " + passSuccessPercent + " " + crossPass + " " + throughBallPass + " " + longBallPass + " " + shortPass + "\n" +
+				win;
 	}
 	
 }
