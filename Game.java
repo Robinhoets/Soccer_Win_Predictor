@@ -8,7 +8,7 @@ public class Game{
 				goals, goalsScoredCounterAttack, goalsScoredOpenPlay, goalsScoredSetPiece, goalsScoredPenalty, ownGoals, 
 				shots, shotsOnTarget, dribblesWon, foulsWon,
 				tackles, interceptions, clearance, shotsBlocked, shotsConceded,
-				totalPasses, passSuccessPercent, crossPass, throughBallPass, longBallPass, shortPass
+				totalPasses, passSuccessPercent, crossPass, throughBallPass, longBallPass, shortPass,
 				win;
 	
 
@@ -18,7 +18,7 @@ public class Game{
 				int goals, int goalsScoredCounterAttack, int goalsScoredOpenPlay, int goalsScoredSetPiece, int goalsScoredPenalty, int ownGoals,
 				int shots, int shotsOnTarget, int dribblesWon, int foulsWon,
 				int tackles, int interceptions, int clearance, int shotsBlocked, int shotsConceded,
-				int totalPasses, int passSuccessPercent, int crossPass, int throughBallPass, int longBallPass, int shortPass
+				int totalPasses, int passSuccessPercent, int crossPass, int throughBallPass, int longBallPass, int shortPass,
 				int win) 
 	{
 		this.yellowCards = yellowCards;
