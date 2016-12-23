@@ -205,13 +205,6 @@ class ViewDisplayText {
 		calculateButton.setAction(action);
 	}
 
-	public String getTextAreaText() {
-      return textArea.getText();
-    }
-
-   	public void setTextAreaText(String text) {
-   	   textArea.setText(text);
-   	}
 
 
 

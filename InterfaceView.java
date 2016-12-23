@@ -11,11 +11,6 @@ public interface InterfaceView {
 
 	void setCalculateAction(Action action);
 
-	void setTextAreaText(String text);
-
-	void getTextAreaText();
-
-
 	void resetTextBoxes();
 
 }

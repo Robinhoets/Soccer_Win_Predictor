@@ -75,7 +75,7 @@ class AddRecordAction extends AbstractAction {
 		
 		
 		// database part
-		//model.addRecord(game);
+		model.addRecord(game);
 
 		view.resetTextBoxes();
 

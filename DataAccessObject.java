@@ -1,4 +1,3 @@
-
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.PreparedStatement;
@@ -24,7 +23,7 @@ public class DataAccessObject {
       		//String myDriver = "org.gjt.mm.mysql.Driver";
     		String myDriver = "com.mysql.jdbc.Driver";
     	    // Setup the connection with the DB
-    	    String myUrl = "jdbc:mysql://localhost/soccer_games";
+    	    String myUrl = "jdbc:mysql://localhost/cfc_football_club";
     	    Class.forName(myDriver);
     	    Connection conn = DriverManager.getConnection(myUrl, "root", "Stardog8*");
 
@@ -34,9 +33,46 @@ public class DataAccessObject {
 
         	// create the mysql insert preparedstatement
       		PreparedStatement preparedStmt = conn.prepareStatement(query);
-      		//preparedStmt.setInt (1, game.getPossession());
-      		//preparedStmt.setInt (2, game.getShots());
-      		//preparedStmt.setInt (3, game.getPassAccuracy());
+
+      		preparedstatement.setInt(1, game.getYellowCards());
+      		preparedstatement.setInt(2, game.getredCards());
+      		preparedstatement.setInt(3, game.getFouls());
+
+      		preparedstatement.setInt(4, game.getCorners());
+      		preparedstatement.setInt(5, game.getOffsides());
+      		preparedstatement.setInt(6, game.getPossessionPercent());
+      		preparedstatement.setInt(7, game.getPassAccuracyPercent());
+
+      		preparedstatement.setInt(8, game.getFormation());
+      		preparedstatement.setInt(9, game.getOpponentsFormation());
+
+      		preparedstatement.setInt(10, game.getGoals());
+      		preparedstatement.setInt(11, game.getGoalsScoredCounterAttack());
+      		preparedstatement.setInt(12, game.getGoalsScoredOpenPlay());
+      		preparedstatement.setInt(13, game.getGoalsScoredSetPiece());
+      		preparedstatement.setInt(14, game.getGoalsScoredPenalty());
+      		preparedstatement.setInt(15, game.getOwnGoals());
+
+      		preparedstatement.setInt(16, game.getShots());
+      		preparedstatement.setInt(17, game.getShotsOnTarget());
+      		preparedstatement.setInt(18, game.getDribblesWon());
+      		preparedstatement.setInt(19, game.getFoulsWon());
+
+			preparedstatement.setInt(20, game.getTackles());
+      		preparedstatement.setInt(21, game.getInterceptions());
+      		preparedstatement.setInt(22, game.getClearance());
+      		preparedstatement.setInt(23, game.getShotsBlocked());
+      		preparedstatement.setInt(24, game.getShotsConceded());
+
+      		preparedstatement.setInt(25, game.getTotalPasses());
+      		preparedstatement.setInt(26, game.getPassSuccessPercent());
+      		preparedstatement.setInt(27, game.getCrossPass());
+      		preparedstatement.setInt(28, game.getThroughBallPass());
+      		preparedstatement.setInt(29, game.getLongBallPass());
+      		preparedstatement.setInt(30, game.getShortPass());
+
+      		preparedstatement.setInt(31, game.getWin());
+
 
       		// execute the preparedstatement
       		preparedStmt.execute();

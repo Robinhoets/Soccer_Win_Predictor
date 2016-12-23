@@ -36,15 +36,7 @@ public class View implements InterfaceView {
     	dislpayText.setCalculateButtonAction(action);
     }
 
-    @Override
-    public void setTextAreaText(String text) {
-    	dislpayText.setTextAreaText(text);
-    }
 
-    @Override
-    public void getTextAreaText() {
-    	dislpayText.getTextAreaText();
-    }
 
 
     // Cards and fouls section

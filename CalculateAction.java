@@ -28,7 +28,6 @@ class CalculateAction extends AbstractAction {
    		gameList = model.getGameList();
 
 		for(int i=0; i<gameList.size(); i++) {
-			view.setTextAreaText(gameList.get(i).toString());
 			System.out.println(gameList.get(i).toString());
 		}
 
