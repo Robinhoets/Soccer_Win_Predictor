@@ -8,10 +8,9 @@ import java.awt.*;
 
 class ViewDisplayText {
 
-	private JPanel mainPanel = new JPanel();
+	private JPanel mainPanel = new JPanel(new BorderLayout(3,3));
 	private JButton addRecordButton = new JButton("Add Record");
 	private JButton calculateButton = new JButton("Calculte");
-	private JTextArea textArea = new JTextArea(20,20);
 
 	// labels section
 	private JLabel yellowCardsLabel = new JLabel("Yellow Cards");
@@ -98,94 +97,99 @@ class ViewDisplayText {
 		buttonPanel.add(addRecordButton);
 		buttonPanel.add(calculateButton);
 
-		JPanel textAndLabelPanel = new JPanel(new GridLayout(2, 0, 2, 0));
+		JPanel textPanel = new JPanel(new GridLayout(0,1));
+		JPanel labelPanel = new JPanel(new GridLayout(0,1));
+
 		// add labels
-		textAndLabelPanel.add(yellowCardsLabel);
-		textAndLabelPanel.add(redCardsLabel);
-		textAndLabelPanel.add(foulsLabel);
+		labelPanel.add(yellowCardsLabel);
+		labelPanel.add(redCardsLabel);
+		labelPanel.add(foulsLabel);
 
-		textAndLabelPanel.add(cornersLabel);
-		textAndLabelPanel.add(offsidesLabel);
-		textAndLabelPanel.add(possessionPercentAccuracyLabel);
-		textAndLabelPanel.add(passAccuracyPercentLabel);
+		labelPanel.add(cornersLabel);
+		labelPanel.add(offsidesLabel);
+		labelPanel.add(possessionPercentAccuracyLabel);
+		labelPanel.add(passAccuracyPercentLabel);
 
-		textAndLabelPanel.add(formationLabel);
-		textAndLabelPanel.add(opponentsFormationLabel);
+		labelPanel.add(formationLabel);
+		labelPanel.add(opponentsFormationLabel);
+	
+		labelPanel.add(goalsLabel);
+		labelPanel.add(goalsScoredCounterAttackLabel);
+		labelPanel.add(goalsScoredOpenPlayLabel);
+		labelPanel.add(goalsScoredSetPieceLabel);
+		labelPanel.add(goalsScoredPenaltyLabel);
+		labelPanel.add(ownGoalLabel);
 
-		textAndLabelPanel.add(goalsLabel);
-		textAndLabelPanel.add(goalsScoredCounterAttackLabel);
-		textAndLabelPanel.add(goalsScoredOpenPlayLabel);
-		textAndLabelPanel.add(goalsScoredSetPieceLabel);
-		textAndLabelPanel.add(goalsScoredPenaltyLabel);
-		textAndLabelPanel.add(ownGoalLabel);
+		labelPanel.add(shotsLabel);
+		labelPanel.add(shotsOnTargetLabel);
+		labelPanel.add(dribblesWonLabel);
 
-		textAndLabelPanel.add(shotsLabel);
-		textAndLabelPanel.add(shotsOnTargetLabel);
-		textAndLabelPanel.add(dribblesWonLabel);
-		textAndLabelPanel.add(foulsWonLabel);
+		labelPanel.add(foulsWonLabel);
 
-		textAndLabelPanel.add(tacklesLabel);
-		textAndLabelPanel.add(interceptionsLabel);
-		textAndLabelPanel.add(clearanceLabel);
-		textAndLabelPanel.add(shotsBlockedLabel);
-		textAndLabelPanel.add(shotsConcededLabel);
+		labelPanel.add(tacklesLabel);
+		labelPanel.add(interceptionsLabel);
+		labelPanel.add(clearanceLabel);
+		labelPanel.add(shotsBlockedLabel);
+		labelPanel.add(shotsConcededLabel);
 
-		textAndLabelPanel.add(totalPassesLabel);
-		textAndLabelPanel.add(passSuccessPercentLabel);
-		textAndLabelPanel.add(crossPassLabel);
-		textAndLabelPanel.add(throughBallPassLabel);
-		textAndLabelPanel.add(longBallPassLabel);
-		textAndLabelPanel.add(shortPassLabel);
+		labelPanel.add(totalPassesLabel);
+		labelPanel.add(passSuccessPercentLabel);
+		labelPanel.add(crossPassLabel);
 
-		textAndLabelPanel.add(winLabel);
+		labelPanel.add(throughBallPassLabel);
+		labelPanel.add(longBallPassLabel);
+		labelPanel.add(shortPassLabel);
 
+		labelPanel.add(winLabel);
 
-		// add text boxes
-		textAndLabelPanel.add(yellowCardsText);
-		textAndLabelPanel.add(redCardsText);
-		textAndLabelPanel.add(foulsText);
+		// text boxes
+		textPanel.add(yellowCardsText);
+		textPanel.add(redCardsText);
+		textPanel.add(foulsText);
 
-		textAndLabelPanel.add(cornersText);
-		textAndLabelPanel.add(offsidesText);
-		textAndLabelPanel.add(possessionPercentAccuracyText);
-		textAndLabelPanel.add(passAccuracyPercentText);
+		textPanel.add(cornersText);
+		textPanel.add(offsidesText);
+		textPanel.add(possessionPercentAccuracyText);
+		textPanel.add(passAccuracyPercentText);
 
-		textAndLabelPanel.add(formationText);
-		textAndLabelPanel.add(opponentsFormationText);
+		textPanel.add(formationText);
+		textPanel.add(opponentsFormationText);
 
-		textAndLabelPanel.add(goalsText);
-		textAndLabelPanel.add(goalsScoredCounterAttackText);
-		textAndLabelPanel.add(goalsScoredOpenPlayText);
-		textAndLabelPanel.add(goalsScoredSetPieceText);
-		textAndLabelPanel.add(goalsScoredPenaltyText);
-		textAndLabelPanel.add(ownGoalText);
+		textPanel.add(goalsText);
+		textPanel.add(goalsScoredCounterAttackText);
+		textPanel.add(goalsScoredOpenPlayText);
+		textPanel.add(goalsScoredSetPieceText);
+		textPanel.add(goalsScoredPenaltyText);
+		textPanel.add(ownGoalText);
 
-		textAndLabelPanel.add(shotsText);
-		textAndLabelPanel.add(shotsOnTargetText);
-		textAndLabelPanel.add(dribblesWonText);
-		textAndLabelPanel.add(foulsWonText);
+		textPanel.add(shotsText);
+		textPanel.add(shotsOnTargetText);
+		textPanel.add(dribblesWonText);
 
-		textAndLabelPanel.add(tacklesText);
-		textAndLabelPanel.add(interceptionsText);
-		textAndLabelPanel.add(clearanceText);
-		textAndLabelPanel.add(shotsBlockedText);
-		textAndLabelPanel.add(shotsConcededText);
+		textPanel.add(foulsWonText);
 
-		textAndLabelPanel.add(totalPassesText);
-		textAndLabelPanel.add(passSuccessPercentText);
-		textAndLabelPanel.add(crossPassText);
-		textAndLabelPanel.add(throughBallPassText);
-		textAndLabelPanel.add(longBallPassText);
-		textAndLabelPanel.add(shortPassText);
+		textPanel.add(tacklesText);
+		textPanel.add(interceptionsText);
+		textPanel.add(clearanceText);
+		textPanel.add(shotsBlockedText);
+		textPanel.add(shotsConcededText);
 
-		textAndLabelPanel.add(winText);
+		textPanel.add(totalPassesText);
+		textPanel.add(passSuccessPercentText);
+		textPanel.add(crossPassText);
+
+		textPanel.add(throughBallPassText);
+		textPanel.add(longBallPassText);
+		textPanel.add(shortPassText);
+
+		textPanel.add(winText);
 
 
 		// add panels to main panel
 		mainPanel.setBorder(BorderFactory.createEmptyBorder(2,2,2,2));
 		mainPanel.setLayout(new BorderLayout());
-		mainPanel.add(textAndLabelPanel, BorderLayout.PAGE_START);
-      	mainPanel.add(new JScrollPane(textArea), BorderLayout.CENTER);
+		mainPanel.add(labelPanel, BorderLayout.WEST);
+		mainPanel.add(textPanel, BorderLayout.CENTER);
       	mainPanel.add(buttonPanel, BorderLayout.PAGE_END);
 	}
 
