@@ -34,9 +34,9 @@ public class DataAccessObject {
 
         	// create the mysql insert preparedstatement
       		PreparedStatement preparedStmt = conn.prepareStatement(query);
-      		preparedStmt.setInt (1, game.getPossession());
-      		preparedStmt.setInt (2, game.getShots());
-      		preparedStmt.setInt (3, game.getPassAccuracy());
+      		//preparedStmt.setInt (1, game.getPossession());
+      		//preparedStmt.setInt (2, game.getShots());
+      		//preparedStmt.setInt (3, game.getPassAccuracy());
 
       		// execute the preparedstatement
       		preparedStmt.execute();

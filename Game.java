@@ -110,6 +110,9 @@ public class Game{
 	public int getGoalsScoredPenalty() {
 		return goalsScoredPenalty;
 	}
+	public int getOwnGoals() {
+		return ownGoals;
+	}
 
 	// offensive moves
 	public int getShots(){

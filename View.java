@@ -96,6 +96,9 @@ public class View implements InterfaceView {
 	public int getGoalsScoredPenaltyTextAreaText() {
 		return dislpayText.getGoalsScoredPenaltyTextAreaText();
 	}
+	public int getOwnGoalTextAreaText() {
+		return dislpayText.getOwnGoalsTextAreaText();
+	}
 
 	// offensive moves
 	public int getShotsTextAreaText(){

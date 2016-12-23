@@ -262,6 +262,9 @@ class ViewDisplayText {
 	public int getGoalsScoredPenaltyTextAreaText() {
 		return textToInteger(goalsScoredPenaltyText.getText());
 	}
+	public int getOwnGoalsTextAreaText() {
+		return textToInteger(ownGoalText.getText());
+	}
 
 	// offensive moves
 	public int getShotsTextAreaText(){
