@@ -28,50 +28,50 @@ public class DataAccessObject {
     	    Connection conn = DriverManager.getConnection(myUrl, "root", "Stardog8*");
 
     	    // the mysql insert statement
-      		String query = " insert into madeUpTeam(possession, shots, passAccuracy)"
-        	+ " values (?, ?, ?)";
+      		String query = " insert into premierLeague20162017(yellowCards, redCards, fouls, corners, offsides, possessionPercent, passAccuracyPercent, formation, opponentsFormation, goals, goalsScoredCounterAttack, goalsScoredOpenPlay, goalsScoredSetPiece, goalsScoredPenalty, ownGoals, shots, shotsOnTarget, dribblesWon, foulsWon, tackles, interceptions, clearance, shotsBlocked, shotsConceded, totalPasses, passSuccessPercent, crossPass, throughBallPass, longBallPass, shortPass, win)"
+        	+ " values (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)";
 
         	// create the mysql insert preparedstatement
       		PreparedStatement preparedStmt = conn.prepareStatement(query);
 
-      		preparedstatement.setInt(1, game.getYellowCards());
-      		preparedstatement.setInt(2, game.getredCards());
-      		preparedstatement.setInt(3, game.getFouls());
+      		preparedStmt.setInt(1, game.getYellowCards());
+      		preparedStmt.setInt(2, game.getRedCards());
+      		preparedStmt.setInt(3, game.getFouls());
 
-      		preparedstatement.setInt(4, game.getCorners());
-      		preparedstatement.setInt(5, game.getOffsides());
-      		preparedstatement.setInt(6, game.getPossessionPercent());
-      		preparedstatement.setInt(7, game.getPassAccuracyPercent());
+      		preparedStmt.setInt(4, game.getCorners());
+      		preparedStmt.setInt(5, game.getOffsides());
+      		preparedStmt.setInt(6, game.getPossessionPercent());
+      		preparedStmt.setInt(7, game.getPassAccuracyPercent());
 
-      		preparedstatement.setInt(8, game.getFormation());
-      		preparedstatement.setInt(9, game.getOpponentsFormation());
+      		preparedStmt.setInt(8, game.getFormation());
+      		preparedStmt.setInt(9, game.getOpponentsFormation());
 
-      		preparedstatement.setInt(10, game.getGoals());
-      		preparedstatement.setInt(11, game.getGoalsScoredCounterAttack());
-      		preparedstatement.setInt(12, game.getGoalsScoredOpenPlay());
-      		preparedstatement.setInt(13, game.getGoalsScoredSetPiece());
-      		preparedstatement.setInt(14, game.getGoalsScoredPenalty());
-      		preparedstatement.setInt(15, game.getOwnGoals());
+      		preparedStmt.setInt(10, game.getGoals());
+      		preparedStmt.setInt(11, game.getGoalsScoredCounterAttack());
+      		preparedStmt.setInt(12, game.getGoalsScoredOpenPlay());
+      		preparedStmt.setInt(13, game.getGoalsScoredSetPiece());
+      		preparedStmt.setInt(14, game.getGoalsScoredPenalty());
+      		preparedStmt.setInt(15, game.getOwnGoals());
 
-      		preparedstatement.setInt(16, game.getShots());
-      		preparedstatement.setInt(17, game.getShotsOnTarget());
-      		preparedstatement.setInt(18, game.getDribblesWon());
-      		preparedstatement.setInt(19, game.getFoulsWon());
+      		preparedStmt.setInt(16, game.getShots());
+      		preparedStmt.setInt(17, game.getShotsOnTarget());
+      		preparedStmt.setInt(18, game.getDribblesWon());
+      		preparedStmt.setInt(19, game.getFoulsWon());
 
-			preparedstatement.setInt(20, game.getTackles());
-      		preparedstatement.setInt(21, game.getInterceptions());
-      		preparedstatement.setInt(22, game.getClearance());
-      		preparedstatement.setInt(23, game.getShotsBlocked());
-      		preparedstatement.setInt(24, game.getShotsConceded());
+			preparedStmt.setInt(20, game.getTackles());
+      		preparedStmt.setInt(21, game.getInterceptions());
+      		preparedStmt.setInt(22, game.getClearance());
+      		preparedStmt.setInt(23, game.getShotsBlocked());
+      		preparedStmt.setInt(24, game.getShotsConceded());
 
-      		preparedstatement.setInt(25, game.getTotalPasses());
-      		preparedstatement.setInt(26, game.getPassSuccessPercent());
-      		preparedstatement.setInt(27, game.getCrossPass());
-      		preparedstatement.setInt(28, game.getThroughBallPass());
-      		preparedstatement.setInt(29, game.getLongBallPass());
-      		preparedstatement.setInt(30, game.getShortPass());
+      		preparedStmt.setInt(25, game.getTotalPasses());
+      		preparedStmt.setInt(26, game.getPassSuccessPercent());
+      		preparedStmt.setInt(27, game.getCrossPass());
+      		preparedStmt.setInt(28, game.getThroughBallPass());
+      		preparedStmt.setInt(29, game.getLongBallPass());
+      		preparedStmt.setInt(30, game.getShortPass());
 
-      		preparedstatement.setInt(31, game.getWin());
+      		preparedStmt.setInt(31, game.getWin());
 
 
       		// execute the preparedstatement
