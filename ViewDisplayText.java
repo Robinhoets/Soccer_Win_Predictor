@@ -213,7 +213,7 @@ class ViewDisplayText {
 		showRecordsButton.setAction(action);
 	}
 
-	public void setDeleteRecordsButtonAction(Action action) {
+	public void setDeleteRecordButtonAction(Action action) {
 		deleteRecordButton.setAction(action);
 	}
 

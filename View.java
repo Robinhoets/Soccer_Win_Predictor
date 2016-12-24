@@ -32,11 +32,24 @@ public class View implements InterfaceView {
     }
 
     @Override
+    public void setShowRecordsAction(Action action) {
+    	dislpayText.setShowRecordsButtonAction(action);
+    }
+
+    @Override
+    public void setDeleteRecordAction(Action action) {
+    	dislpayText.setDeleteRecordButtonAction(action);
+    }
+
+    @Override
     public void setCalculateAction(Action action) {
     	dislpayText.setCalculateButtonAction(action);
     }
 
-
+    @Override
+    public void setGraphAction(Action action) {
+    	dislpayText.setGraphButtonAction(action);
+    }
 
 
     // Cards and fouls section

@@ -9,7 +9,13 @@ public interface InterfaceView {
 
 	void setAddRecordAction(Action action);
 
+	void setShowRecordsAction(Action action);
+
+	void setDeleteRecordAction(Action action);
+
 	void setCalculateAction(Action action);
+
+	void setGraphAction(Action action);
 
 	void resetTextBoxes();
 
