@@ -204,13 +204,27 @@ class ViewDisplayText {
 		return mainPanel;
 	}
 
+	// actions for buttons
 	public void setAddRecordButtonAction(Action action) {
 		addRecordButton.setAction(action);
+	}
+
+	public void setShowRecordsButtonAction(Action action) {
+		showRecordsButton.setAction(action);
+	}
+
+	public void setDeleteRecordsButtonAction(Action action) {
+		deleteRecordButton.setAction(action);
 	}
 
 	public void setCalculateButtonAction(Action action) {
 		calculateButton.setAction(action);
 	}
+
+	public void setGraphButtonAction(Action action) {
+		graphButton.setAction(action);
+	}
+
 
 
 
