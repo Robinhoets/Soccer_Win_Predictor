@@ -9,8 +9,12 @@ import java.awt.*;
 class ViewDisplayText {
 
 	private JPanel mainPanel = new JPanel(new BorderLayout(3,3));
+	// create buttons
 	private JButton addRecordButton = new JButton("Add Record");
 	private JButton calculateButton = new JButton("Calculte");
+	private JButton showRecordsButton = new JButton("Show Records");
+	private JButton graphButton = new JButton("Graph");
+	private JButton deleteRecordButton = new JButton("Delete Record");
 
 	// labels section
 	private JLabel yellowCardsLabel = new JLabel("Yellow Cards");
@@ -93,9 +97,12 @@ class ViewDisplayText {
 	private JTextField winText = new JTextField(10);
 
 	public ViewDisplayText() {
-		JPanel buttonPanel = new JPanel(new GridLayout(1, 0, 2, 0));
+		JPanel buttonPanel = new JPanel(new GridLayout(3, 0, 2, 0));
 		buttonPanel.add(addRecordButton);
 		buttonPanel.add(calculateButton);
+		buttonPanel.add(showRecordsButton);
+		buttonPanel.add(graphButton);
+		buttonPanel.add(deleteRecordButton);
 
 		JPanel textPanel = new JPanel(new GridLayout(0,1));
 		JPanel labelPanel = new JPanel(new GridLayout(0,1));
