@@ -62,5 +62,10 @@ Stats to add:
 
 Stats added - need to implement RServe, 
 
-Create Delete Record
-Create Show Records
+Create Delete Record button
+Create Show Records Button
+create graph button
+
+Need to create DeleteRecordAction class
+			   ShowRecordsAction class
+			   GraphRecordsAction class
