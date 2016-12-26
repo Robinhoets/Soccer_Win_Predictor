@@ -70,6 +70,11 @@ Need to create DeleteRecordAction class (DONE)
 			   ShowRecordsAction class (DONE)
 			   GraphRecordsAction class (DONE)
 
-Need logic for DeleteRecordAction class
+Need logic for DeleteRecordAction class - Creates pane
+										  method reads database in DataAccessObject
+										  method creates StringBuilder in DataAccessObject
+										  method creates arraylist of Strings in DataAccessObject
+										  pass array of strings from ShowRecordsAciton to method in view
+										  then call method in view display text to add text
 Need logic for ShowRecordsAction class
 Need logic for GraphAction class

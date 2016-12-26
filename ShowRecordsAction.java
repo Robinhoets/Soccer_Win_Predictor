@@ -22,6 +22,7 @@ class ShowRecordsAction extends AbstractAction {
 	@Override
    	public void actionPerformed(ActionEvent evt) {
    		view.addScrollPane();
+   		model.getAllRecords();
    	}
 
 }
