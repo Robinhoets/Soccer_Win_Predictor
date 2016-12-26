@@ -66,6 +66,10 @@ Create Delete Record button (DONE)
 Create Show Records Button (DONE)
 create graph button (DONE)
 
-Need to create DeleteRecordAction class
-			   ShowRecordsAction class
-			   GraphRecordsAction class
+Need to create DeleteRecordAction class (DONE)
+			   ShowRecordsAction class (DONE)
+			   GraphRecordsAction class (DONE)
+
+Need logic for DeleteRecordAction class
+Need logic for ShowRecordsAction class
+Need logic for GraphAction class
