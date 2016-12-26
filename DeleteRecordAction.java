@@ -14,9 +14,9 @@ class DeleteRecordAction extends AbstractAction {
 	private Model model;
 
 	public DeleteRecordAction(View view, Model model, String name) {
+		super(name);
 		this.view = view;
 		this.model = model;
-		this.name = name;
 	}
 
 	@Override
