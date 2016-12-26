@@ -10,6 +10,7 @@ public class Control {
 
 		view.setAddRecordAction(new AddRecordAction(view, model, "Add Record"));
 		view.setCalculateAction(new CalculateAction(view, model, "Calculate"));
+		view.setShowRecordsAction(new ShowRecordsAction(view, model, "Show Records"));
 		view.setDeleteRecordAction(new DeleteRecordAction(view, model, "Delete Record"));
 
 		//model.addPropertyChangeListener(new ModelListener(view, model));	// create class model Listener
