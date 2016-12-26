@@ -5,6 +5,7 @@ import java.awt.Window;
 import javax.swing.*;
 import javax.swing.border.BevelBorder;
 import java.awt.*;
+import javax.swing.JScrollPane;
 
 class ViewDisplayText {
 
@@ -15,6 +16,10 @@ class ViewDisplayText {
 	private JButton showRecordsButton = new JButton("Show Records");
 	private JButton graphButton = new JButton("Graph");
 	private JButton deleteRecordButton = new JButton("Delete Record");
+
+	//create scrollpane that can be added
+	JTextArea textArea = new JTextArea(5,30);
+	JScrollPane scrollPane = new JScrollPane(textArea);
 
 	// labels section
 	private JLabel yellowCardsLabel = new JLabel("Yellow Cards");
@@ -386,5 +391,14 @@ class ViewDisplayText {
 		shortPassText.setText("");
 
 		winText.setText("");
+    }
+
+    public void addScrollPane(){
+
+    	scrollPane.setHorizontalScrollBarPolicy(JScrollPane.HORIZONTAL_SCROLLBAR_ALWAYS);
+   	 	scrollPane.setVerticalScrollBarPolicy(JScrollPane.VERTICAL_SCROLLBAR_ALWAYS);
+
+    	mainPanel.add(scrollPane, BorderLayout.EAST);
+
     }
 }

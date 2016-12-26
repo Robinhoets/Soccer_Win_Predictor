@@ -162,11 +162,14 @@ public class View implements InterfaceView {
 	}
 
 
-
-
     @Override
     public void resetTextBoxes() {
     	dislpayText.resetTextBoxes();
     }
 
+
+    public void addScrollPane(){
+    	dislpayText.addScrollPane();
+    	setVisible(true);
+    }
 }
