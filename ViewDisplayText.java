@@ -20,7 +20,7 @@ class ViewDisplayText {
 	private JButton deleteRecordButton = new JButton("Delete Record");
 
 	//create scrollpane that can be added
-	JTextArea textArea = new JTextArea(5,30);
+	JTextArea textArea = new JTextArea(5, 70);
 	JScrollPane scrollPane = new JScrollPane(textArea);
 
 	// labels section
@@ -401,7 +401,7 @@ class ViewDisplayText {
     		scrollPane.add(trial);
     	}
     	*/
-    	textArea.setText(gameList.get(1));
+    	textArea.setText(gameList.get(0));
 
     	
     }

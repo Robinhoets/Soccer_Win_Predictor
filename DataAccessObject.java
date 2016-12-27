@@ -163,7 +163,7 @@ public class DataAccessObject {
                                             tackles, interceptions, clearance, shotsBlocked, shotsConceded,
                                             totalPasses, passSuccessPercent, crossPass, throughBallPass, longBallPass, shortPass,
                                             win);
-
+          // add game to arraylist
           gameList.add(game);
 
         }
