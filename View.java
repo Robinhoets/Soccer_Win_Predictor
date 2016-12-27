@@ -6,6 +6,8 @@ import javax.swing.*;
 import javax.swing.border.BevelBorder;
 import java.awt.*;
 
+import java.util.ArrayList;
+
 public class View implements InterfaceView {
 
 	// Create frame
@@ -165,6 +167,11 @@ public class View implements InterfaceView {
     @Override
     public void resetTextBoxes() {
     	dislpayText.resetTextBoxes();
+    }
+
+
+    public void addGameListToScrollPane(ArrayList<String> gameList) {
+    	dislpayText.addGameListToScrollPane(gameList);
     }
 
 

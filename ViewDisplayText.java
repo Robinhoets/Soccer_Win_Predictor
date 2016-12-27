@@ -7,6 +7,8 @@ import javax.swing.border.BevelBorder;
 import java.awt.*;
 import javax.swing.JScrollPane;
 
+import java.util.ArrayList;
+
 class ViewDisplayText {
 
 	private JPanel mainPanel = new JPanel(new BorderLayout(3,3));
@@ -389,6 +391,19 @@ class ViewDisplayText {
 		shortPassText.setText("");
 
 		winText.setText("");
+    }
+
+    public void  addGameListToScrollPane(ArrayList<String> gameList) {
+    	/*
+    	for(int i=0; i<gameList.size(); i++) {
+    		JPanel trial = new JPanel();
+    		trial.add(gameList.get(i));
+    		scrollPane.add(trial);
+    	}
+    	*/
+    	textArea.setText(gameList.get(1));
+
+    	
     }
 
     public void addScrollPane(){
