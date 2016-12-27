@@ -3,9 +3,9 @@ import java.util.ArrayList;
 
 public interface InterfaceModel {
 	
-	void addGame(Game game);
+	//void addGame(Game game);
 
-	ArrayList<Game> getGameList();
+	//ArrayList<Game> getGameList();
 
 	void addPropertyChangeListener(PropertyChangeListener listener);
 

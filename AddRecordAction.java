@@ -71,7 +71,8 @@ class AddRecordAction extends AbstractAction {
 				tackles, interceptions, clearance, shotsBlocked, shotsConceded,
 				totalPasses, passSuccessPercent, crossPass, throughBallPass, longBallPass, shortPass,
 				win);
-		model.addGame(game);
+		
+		//model.addGame(game);
 		
 		
 		// database part

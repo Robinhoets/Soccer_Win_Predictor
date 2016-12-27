@@ -5,7 +5,7 @@ import javax.swing.event.SwingPropertyChangeSupport;
 
 public class Model implements InterfaceModel {
 
-	private ArrayList<Game> gameList = new ArrayList<Game>();
+	private ArrayList<String> gameList = new ArrayList<String>();
 	
 	private SwingPropertyChangeSupport propChangeSupport = new SwingPropertyChangeSupport(this);
 
@@ -18,24 +18,24 @@ public class Model implements InterfaceModel {
 		dataAccessObject.addRecord(game);
 	}
 
-	public void getAllRecords() {		// turn into return type arraylist of stringbuilder and return to ShowRecordsAction
+	public ArrayList<String> getAllRecords() {		// turn into return type arraylist of stringbuilder and return to ShowRecordsAction
 		try {
-			
-			dataAccessObject.readDatabase();
+
+			gameList = dataAccessObject.readDatabaseAndCreateArrayList();
 
 		} catch (Exception e)
           {
               System.err.println("Got an exception!");
               System.err.println(e.getMessage());
           }
-		
+		return gameList;
 
 	}
 	// End of database section
 
 
 
-	
+	/*
 	@Override
 	public void addGame(Game game) {
 		gameList.add(game);
@@ -45,6 +45,7 @@ public class Model implements InterfaceModel {
 	public ArrayList<Game> getGameList() {
 		return gameList;
 	}
+	*/
 
 	@Override
    	public void addPropertyChangeListener(PropertyChangeListener listener) {

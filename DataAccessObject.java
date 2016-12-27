@@ -7,6 +7,8 @@ import java.sql.Statement;
 import java.util.Date;
 import javax.sql.rowset.JdbcRowSet;
 
+import java.util.ArrayList; 
+
 public class DataAccessObject {
 	
 	private Connection connect = null;
@@ -14,6 +16,8 @@ public class DataAccessObject {
   private PreparedStatement preparedStatement = null;
   private ResultSet resultSet = null;
   private JdbcRowSet rowSet = null;
+
+  private ArrayList<String> gameList = new ArrayList<String>();
 
     public void addRecord(Game game) {
 
@@ -87,7 +91,8 @@ public class DataAccessObject {
     		}
     }
 
-    public void readDatabase() throws Exception {
+
+    public ArrayList<String> readDatabaseAndCreateArrayList() throws Exception {
 
       try{
         // create a mysql database connection
@@ -99,7 +104,7 @@ public class DataAccessObject {
         Connection conn = DriverManager.getConnection(myUrl, "root", "Stardog8*");
 
         // SQL query
-        String query = "SELECT * FROM users";
+        String query = "SELECT * FROM premierLeague20162017";
 
         // create the java statement
         Statement statement = conn.createStatement();
@@ -149,6 +154,18 @@ public class DataAccessObject {
 
           int win = resultSet.getInt("win");
 
+          String game = getRowAndMakeString(id,
+                                            yellowCards, redCards, fouls, 
+                                            corners, offsides, possessionPercent, passAccuracyPercent, 
+                                            formation, opponentsFormation,
+                                            goals, goalsScoredCounterAttack, goalsScoredOpenPlay, goalsScoredSetPiece, goalsScoredPenalty, ownGoals, 
+                                            shots, shotsOnTarget, dribblesWon, foulsWon,
+                                            tackles, interceptions, clearance, shotsBlocked, shotsConceded,
+                                            totalPasses, passSuccessPercent, crossPass, throughBallPass, longBallPass, shortPass,
+                                            win);
+
+          gameList.add(game);
+
         }
 
         statement.close();
@@ -158,6 +175,9 @@ public class DataAccessObject {
               System.err.println("Got an exception!");
               System.err.println(e.getMessage());
           }
+
+        // return the entire game list
+        return gameList;
 
     }
 
@@ -181,7 +201,6 @@ public class DataAccessObject {
                     + "\t" + "Win: " + win;
 
       return game;
- 
     }
 
     /*

@@ -24,13 +24,13 @@ class CalculateAction extends AbstractAction {
 
 	@Override
    	public void actionPerformed(ActionEvent evt) {
-
+   		/*
    		gameList = model.getGameList();
 
 		for(int i=0; i<gameList.size(); i++) {
 			System.out.println(gameList.get(i).toString());
 		}
-
+		*/
    	}
 
 }

@@ -13,6 +13,8 @@ class ShowRecordsAction extends AbstractAction {
 	private View view;
 	private Model model;
 
+	private ArrayList<String> gameList = new ArrayList<String>();
+
 	public ShowRecordsAction(View view, Model model, String name) {
 		super(name);
 		this.view = view;
@@ -22,8 +24,8 @@ class ShowRecordsAction extends AbstractAction {
 	@Override
    	public void actionPerformed(ActionEvent evt) {
    		
-   		model.getAllRecords();	// create variable for stringbuilder array 
-   		// *** code to add records to scrollpan ***
+   		gameList = model.getAllRecords();	// create variable for stringbuilder array 
+   		// view.addGameListToScrollPane(gameList);
    		view.addScrollPane();
    	}
 
