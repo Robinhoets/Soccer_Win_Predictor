@@ -86,6 +86,81 @@ public class DataAccessObject {
       			System.err.println(e.getMessage());
     		}
     }
+
+    public void readDatabase() throws Exception {
+
+      try{
+        // create a mysql database connection
+        //String myDriver = "org.gjt.mm.mysql.Driver";
+        String myDriver = "com.mysql.jdbc.Driver";
+        // Setup the connection with the DB
+        String myUrl = "jdbc:mysql://localhost/cfc_football_club";
+        Class.forName(myDriver);
+        Connection conn = DriverManager.getConnection(myUrl, "root", "Stardog8*");
+
+        // SQL query
+        String query = "SELECT * FROM users";
+
+        // create the java statement
+        Statement statement = conn.createStatement();
+      
+        // execute the query, and get a java resultset
+        ResultSet resultSet = statement.executeQuery(query);
+
+        while(resultSet.next()) {
+          
+          int id = resultSet.getInt("id");
+          int yellowCards = resultSet.getInt("yellowCards");
+          int redCards = resultSet.getInt("redCards");
+          int fouls = resultSet.getInt("fouls");
+
+          int corners = resultSet.getInt("corners");
+          int offsides = resultSet.getInt("offsides");
+          int possessionPercent = resultSet.getInt("possessionPercent");
+          int passAccuracyPercent = resultSet.getInt("passAccuracyPercent");
+
+          int formation = resultSet.getInt("formation");
+          int opponentsFormation = resultSet.getInt("opponentsFormation");
+
+          int goals = resultSet.getInt("goals");
+          int goalsScoredCounterAttack = resultSet.getInt("goalsScoredCounterAttack");
+          int goalsScoredOpenPlay = resultSet.getInt("goalsScoredOpenPlay");
+          int goalsScoredSetPiece = resultSet.getInt("goalsScoredSetPiece");
+          int goalsScoredPenalty = resultSet.getInt("goalsScoredPenalty");
+          int ownGoals = resultSet.getInt("ownGoals");
+
+          int shots = resultSet.getInt("shots");
+          int shotsOnTarget = resultSet.getInt("shotsOnTarget");
+          int dribblesWon = resultSet.getInt("dribblesWon");
+          int foulsWon = resultSet.getInt("foulsWon");
+
+          int tackles = resultSet.getInt("tackles");
+          int interceptions = resultSet.getInt("interceptions");
+          int clearance = resultSet.getInt("clearance");
+          int shotsBlocked = resultSet.getInt("shotsBlocked");
+          int shotsConceded = resultSet.getInt("shotsConceded");
+
+          int totalPasses = resultSet.getInt("totalPasses");
+          int passSuccessPercent = resultSet.getInt("passSuccessPercent");
+          int crossPass = resultSet.getInt("crossPass");
+          int throughBallPass = resultSet.getInt("throughBallPass");
+          int longBallPass = resultSet.getInt("longBallPass");
+          int shortPass = resultSet.getInt("shortPass");
+
+          int win = resultSet.getInt("win");
+
+        }
+
+        statement.close();
+
+        } catch (Exception e)
+          {
+              System.err.println("Got an exception!");
+              System.err.println(e.getMessage());
+          }
+
+    }
+
     /*
     public void readDatabase() throws Exception {
     	try{

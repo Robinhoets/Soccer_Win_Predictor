@@ -233,8 +233,6 @@ class ViewDisplayText {
 
 
 
-
-
    	// text from text boxes
    	// Cards and fouls section
 	public int getYellowCardsTextAreaText() {

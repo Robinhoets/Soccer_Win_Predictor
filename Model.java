@@ -17,6 +17,10 @@ public class Model implements InterfaceModel {
 	public void addRecord(Game game) {
 		dataAccessObject.addRecord(game);
 	}
+
+	public void getAllRecords() {
+
+	}
 	// End of database section
 
 
