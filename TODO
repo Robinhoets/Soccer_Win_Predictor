@@ -72,7 +72,7 @@ Need to create DeleteRecordAction class (DONE)
 
 Need logic for DeleteRecordAction class - Create pane (DONE)
 										  method reads database in DataAccessObject (DONE)
-										  method creates StringBuilder in DataAccessObject
+										  method creates StringBuilder in DataAccessObject (DONE)
 										  method creates arraylist of Strings in DataAccessObject
 										  pass array of strings from ShowRecordsAciton to method in view
 										  then call method in view display text to add text

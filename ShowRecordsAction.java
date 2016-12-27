@@ -21,8 +21,10 @@ class ShowRecordsAction extends AbstractAction {
 
 	@Override
    	public void actionPerformed(ActionEvent evt) {
+   		
+   		model.getAllRecords();	// create variable for stringbuilder array 
+   		// *** code to add records to scrollpan ***
    		view.addScrollPane();
-   		model.getAllRecords();
    	}
 
 }

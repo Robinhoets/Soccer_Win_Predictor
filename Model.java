@@ -18,7 +18,17 @@ public class Model implements InterfaceModel {
 		dataAccessObject.addRecord(game);
 	}
 
-	public void getAllRecords() {
+	public void getAllRecords() {		// turn into return type arraylist of stringbuilder and return to ShowRecordsAction
+		try {
+			
+			dataAccessObject.readDatabase();
+
+		} catch (Exception e)
+          {
+              System.err.println("Got an exception!");
+              System.err.println(e.getMessage());
+          }
+		
 
 	}
 	// End of database section

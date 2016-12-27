@@ -108,7 +108,7 @@ public class DataAccessObject {
         ResultSet resultSet = statement.executeQuery(query);
 
         while(resultSet.next()) {
-          
+
           int id = resultSet.getInt("id");
           int yellowCards = resultSet.getInt("yellowCards");
           int redCards = resultSet.getInt("redCards");
@@ -159,6 +159,29 @@ public class DataAccessObject {
               System.err.println(e.getMessage());
           }
 
+    }
+
+    public String getRowAndMakeString(int id, int yellowCards, int redCards, int fouls, 
+        int corners, int offsides, int possessionPercent, int passAccuracyPercent, 
+        int formation, int opponentsFormation,
+        int goals, int goalsScoredCounterAttack, int goalsScoredOpenPlay, int goalsScoredSetPiece, int goalsScoredPenalty, int ownGoals, 
+        int shots, int shotsOnTarget, int dribblesWon, int foulsWon,
+        int tackles, int interceptions, int clearance, int shotsBlocked, int shotsConceded,
+        int totalPasses, int passSuccessPercent, int crossPass, int throughBallPass, int longBallPass, int shortPass,
+        int win) {
+
+      String game = "Game: " + id + "\n" 
+                    + "\t" + "Yellow Cards: " + yellowCards + "  Red Cards: " + redCards + "\n"
+                    + "\t" + "Corners: " + corners + "  Offsides: " + offsides + "  Possession Percent: " + possessionPercent + "  Pass Accuracy Percent: " + "\n" 
+                    + "\t" + "Formation: " + formation + "  Oppnonents Formaiton: " + opponentsFormation + "\n"
+                    + "\t" + "Goals: " + goals + "  Goals Scored Counter Attack: " + goalsScoredCounterAttack + "  Goals Scored Open Play: " + goalsScoredOpenPlay + "  Goals Scored Set Piece: " + goalsScoredSetPiece + "  Goals Score Penalty: " + goalsScoredPenalty + "  Own Goals: " + ownGoals + "\n"
+                    + "\t" + "Shots: " + shots + "  Shots On Target: " + "Dribbles Won: " + dribblesWon + "  Fouls Won: " + foulsWon + "\n"
+                    + "\t" + "Tackles: " + tackles + "  Interceptions: " + interceptions + "  Clearance: " + clearance + "  Shots Blocked: " + shotsBlocked + "  Shots Conceded: " + shotsConceded + "\n"
+                    + "\t" + "Total Passes: " + totalPasses + "  Pass Success Percent: " + passSuccessPercent + "  Cross Passes: " + crossPass + "  Through Balls: " + throughBallPass + "  Long Balls: " + longBallPass + "  Short Pass: " + shortPass + "\n"
+                    + "\t" + "Win: " + win;
+
+      return game;
+ 
     }
 
     /*
