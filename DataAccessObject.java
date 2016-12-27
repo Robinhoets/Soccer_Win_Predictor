@@ -190,7 +190,7 @@ public class DataAccessObject {
         int totalPasses, int passSuccessPercent, int crossPass, int throughBallPass, int longBallPass, int shortPass,
         int win) {
 
-      String game = "Game: " + id + "\n" 
+      String game = "\nGame: " + id + "\n" 
                     + "\t" + "Yellow Cards: " + yellowCards + "  Red Cards: " + redCards + "\n"
                     + "\t" + "Corners: " + corners + "  Offsides: " + offsides + "  Possession Percent: " + possessionPercent + "  Pass Accuracy Percent: " + "\n" 
                     + "\t" + "Formation: " + formation + "  Oppnonents Formaiton: " + opponentsFormation + "\n"

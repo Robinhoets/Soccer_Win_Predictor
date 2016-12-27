@@ -394,14 +394,14 @@ class ViewDisplayText {
     }
 
     public void  addGameListToScrollPane(ArrayList<String> gameList) {
-    	/*
+    	
     	for(int i=0; i<gameList.size(); i++) {
-    		JPanel trial = new JPanel();
-    		trial.add(gameList.get(i));
-    		scrollPane.add(trial);
+    		
+    		textArea.append(gameList.get(i));
+    		
     	}
-    	*/
-    	textArea.setText(gameList.get(0));
+    	
+    	//textArea.setText(gameList.get(0));
 
     	
     }
