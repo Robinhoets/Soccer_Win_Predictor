@@ -76,6 +76,7 @@ Need logic for DeleteRecordAction class - Create pane (DONE)
 										  method creates arraylist of Strings in DataAccessObject (DONE)
 										  pass array of strings from ShowRecordsAciton to method in view (DONE)
 										  then call method in view display text to add text (DONE)
-										  *** Needs debugging - doesn't add any text ***
+										  Needs debugging - doesn't add any text (DONE)
+										  adds text each time show records pushed - need to delete original on the page
 Need logic for ShowRecordsAction class
 Need logic for GraphAction class

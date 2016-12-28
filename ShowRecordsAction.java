@@ -24,7 +24,9 @@ class ShowRecordsAction extends AbstractAction {
 	@Override
    	public void actionPerformed(ActionEvent evt) {
    		
-   		gameList = model.getAllRecords();	// create variable for stringbuilder array 
+   		gameList.clear();
+   		gameList = model.getAllRecords();
+   		view.clearTextArea(); 
    		view.addGameListToScrollPane(gameList);
    		view.addScrollPane();
    	}

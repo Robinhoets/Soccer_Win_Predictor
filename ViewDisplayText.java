@@ -393,17 +393,17 @@ class ViewDisplayText {
 		winText.setText("");
     }
 
-    public void  addGameListToScrollPane(ArrayList<String> gameList) {
-    	
-    	for(int i=0; i<gameList.size(); i++) {
-    		
-    		textArea.append(gameList.get(i));
-    		
-    	}
-    	
-    	//textArea.setText(gameList.get(0));
+    public void clearTextArea() {
+    	textArea.setText("");
+    }
 
-    	
+    public void  addGameListToScrollPane(ArrayList<String> gameList) {
+
+    	textArea.setText("");
+    	for(int i=0; i<gameList.size(); i++) {  		
+    		textArea.append(gameList.get(i));	
+    	}
+
     }
 
     public void addScrollPane(){
