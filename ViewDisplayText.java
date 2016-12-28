@@ -393,10 +393,6 @@ class ViewDisplayText {
 		winText.setText("");
     }
 
-    public void clearTextArea() {
-    	textArea.setText("");
-    }
-
     public void  addGameListToScrollPane(ArrayList<String> gameList) {
 
     	textArea.setText("");

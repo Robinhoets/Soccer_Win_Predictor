@@ -169,9 +169,6 @@ public class View implements InterfaceView {
     	dislpayText.resetTextBoxes();
     }
 
-    public void clearTextArea() {
-    	dislpayText.clearTextArea();
-    }
 
     public void addGameListToScrollPane(ArrayList<String> gameList) {
     	dislpayText.addGameListToScrollPane(gameList);
