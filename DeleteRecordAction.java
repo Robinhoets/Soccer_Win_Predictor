@@ -16,6 +16,8 @@ class DeleteRecordAction extends AbstractAction {
 	private View view;
 	private Model model;
 
+	private ArrayList<String> gameList = new ArrayList<String>();
+
 	public DeleteRecordAction(View view, Model model, String name) {
 		super(name);
 		this.view = view;
@@ -24,6 +26,11 @@ class DeleteRecordAction extends AbstractAction {
 
 	@Override
    	public void actionPerformed(ActionEvent evt) {
+
+   		gameList.clear();
+   		gameList = model.getAllRecords();
+   		view.addGameListToScrollPane(gameList);
+   		view.addScrollPane();
 
    		int recordNumber = View.getRecordNumber();
 

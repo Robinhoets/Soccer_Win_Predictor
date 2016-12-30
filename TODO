@@ -70,7 +70,11 @@ Need to create DeleteRecordAction class (DONE)
 			   ShowRecordsAction class (DONE)
 			   GraphRecordsAction class (DONE)
 
-Need logic for DeleteRecordAction class - 
+Need logic for DeleteRecordAction class - Creates dialog box (DONE)
+										  Make box ask correct question
+										  make sure input is only a number
+										  Show records before dialog so that user can choose from list
+										  pass number to model to delete record with that number
 
 Need logic for ShowRecordsAction class - Create pane (DONE)
 										  method reads database in DataAccessObject (DONE)

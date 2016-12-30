@@ -414,7 +414,7 @@ class ViewDisplayText {
 
     public static int getRecordNumber() {
     	String name = JOptionPane.showInputDialog(mainPanel,
-                        "What is your name?", null);
+                        "Which game number do you want to delete?", null);
 
     	return(textToInteger(name));
     }
