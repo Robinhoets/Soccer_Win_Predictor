@@ -11,6 +11,8 @@ import java.util.ArrayList;
 
 import javax.swing.JOptionPane;
 
+import java.lang.NumberFormatException;
+
 class ViewDisplayText {
 
 	private static JPanel mainPanel = new JPanel(new BorderLayout(3,3));
@@ -413,9 +415,28 @@ class ViewDisplayText {
     }
 
     public static int getRecordNumber() {
-    	String name = JOptionPane.showInputDialog(mainPanel,
+
+    	int intRecordNumber=0;
+    	String recordNumber = JOptionPane.showInputDialog(mainPanel,
                         "Which game number do you want to delete?", "(Game Number)");
 
-    	return(textToInteger(name));
+    	if(recordNumber == null) {
+    		JOptionPane.showMessageDialog(null, "User pressed cancel");	
+		} 
+		else {
+
+			try {
+
+				intRecordNumber = textToInteger(recordNumber);
+
+			} catch(NumberFormatException e) {
+
+				JOptionPane.showMessageDialog(null, "Value must be an integer!");
+
+			}
+		}
+
+    	return intRecordNumber;
     }
+
 }

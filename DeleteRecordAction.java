@@ -30,7 +30,10 @@ class DeleteRecordAction extends AbstractAction {
 
    		int recordNumber = View.getRecordNumber();
 
-   		//model.deleteRecord(recordNumber);
+   		model.deleteRecord(recordNumber);
+
+   		
+
 
    		/*
    		String name = JOptionPane.showInputDialog(parent,

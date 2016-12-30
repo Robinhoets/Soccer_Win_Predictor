@@ -183,4 +183,6 @@ public class View implements InterfaceView {
     	int recordNumber = ViewDisplayText.getRecordNumber();
     	return recordNumber;
     }
+
+
 }
