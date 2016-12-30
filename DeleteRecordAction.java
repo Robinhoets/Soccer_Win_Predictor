@@ -7,8 +7,11 @@ import java.util.concurrent.ExecutionException;
 import javax.swing.*;
 import java.util.ArrayList;
 
+
+import javax.swing.JOptionPane;
+
 @SuppressWarnings("serial")
-class DeleteRecordAction extends AbstractAction {
+class DeleteRecordAction extends AbstractAction { 
 
 	private View view;
 	private Model model;
@@ -22,6 +25,12 @@ class DeleteRecordAction extends AbstractAction {
 	@Override
    	public void actionPerformed(ActionEvent evt) {
 
+   		int recordNumber = View.getRecordNumber();
+
+   		/*
+   		String name = JOptionPane.showInputDialog(parent,
+                        "What is your name?", null);
+		*/
    	}
 
 }

@@ -174,9 +174,13 @@ public class View implements InterfaceView {
     	dislpayText.addGameListToScrollPane(gameList);
     }
 
-
     public void addScrollPane(){
     	dislpayText.addScrollPane();
     	setVisible(true);
+    }
+
+    public static int getRecordNumber() {
+    	int recordNumber = ViewDisplayText.getRecordNumber();
+    	return recordNumber;
     }
 }

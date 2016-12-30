@@ -9,9 +9,11 @@ import javax.swing.JScrollPane;
 
 import java.util.ArrayList;
 
+import javax.swing.JOptionPane;
+
 class ViewDisplayText {
 
-	private JPanel mainPanel = new JPanel(new BorderLayout(3,3));
+	private static JPanel mainPanel = new JPanel(new BorderLayout(3,3));
 	// create buttons
 	private JButton addRecordButton = new JButton("Add Record");
 	private JButton calculateButton = new JButton("Calculte");
@@ -347,7 +349,7 @@ class ViewDisplayText {
 
 
 	// turn text gathered from text box and turns into an integer
-    public int textToInteger(String text) {
+    public static int textToInteger(String text) {
     	return Integer.parseInt(text);
     }
 
@@ -408,6 +410,12 @@ class ViewDisplayText {
    	 	scrollPane.setVerticalScrollBarPolicy(JScrollPane.VERTICAL_SCROLLBAR_ALWAYS);
 
     	mainPanel.add(scrollPane, BorderLayout.EAST);
+    }
 
+    public static int getRecordNumber() {
+    	String name = JOptionPane.showInputDialog(mainPanel,
+                        "What is your name?", null);
+
+    	return(textToInteger(name));
     }
 }
