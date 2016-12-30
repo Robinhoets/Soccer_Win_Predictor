@@ -27,12 +27,10 @@ class DeleteRecordAction extends AbstractAction {
 	@Override
    	public void actionPerformed(ActionEvent evt) {
 
-   		gameList.clear();
-   		gameList = model.getAllRecords();
-   		view.addGameListToScrollPane(gameList);
-   		view.addScrollPane();
 
    		int recordNumber = View.getRecordNumber();
+
+   		//model.deleteRecord(recordNumber);
 
    		/*
    		String name = JOptionPane.showInputDialog(parent,

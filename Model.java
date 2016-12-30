@@ -31,6 +31,11 @@ public class Model implements InterfaceModel {
 		return gameList;
 
 	}
+	
+
+	public void deleteRecord(int recordNumber) {
+		
+	}
 	// End of database section
 
 
