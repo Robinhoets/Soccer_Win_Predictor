@@ -86,7 +86,10 @@ Need logic for ShowRecordsAction class - Create pane (DONE)
 										  Needs debugging - doesn't add any text (DONE)
 										  adds text each time show records pushed - need to delete original on the page (DONE)
 
+Need to decide how to implement Multiple Regression
 
+
+	install rJava
 
 Need logic for GraphAction class
 Need logic for CalculateAction class
