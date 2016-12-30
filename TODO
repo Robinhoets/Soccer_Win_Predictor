@@ -74,7 +74,8 @@ Need logic for DeleteRecordAction class - Creates dialog box (DONE)
 										  Make box ask correct question (DONE)
 										  make sure input is only a number (DONE)
 										  Show records before dialog so that user can choose from list * may not do *
-										  pass number to model to delete record with that number
+										  pass number to model to delete record with that number (DONE)
+										  check if number out of range
 
 Need logic for ShowRecordsAction class - Create pane (DONE)
 										  method reads database in DataAccessObject (DONE)
