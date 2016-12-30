@@ -12,7 +12,7 @@ public class Control {
 		view.setCalculateAction(new CalculateAction(view, model, "Calculate"));
 		view.setShowRecordsAction(new ShowRecordsAction(view, model, "Show Records"));
 		view.setDeleteRecordAction(new DeleteRecordAction(view, model, "Delete Record"));
-		view.setGraphAction(new ShowRecordsAction(view, model, "Graph"));
+		view.setGraphAction(new GraphAction(view, model, "Graph"));
 
 		//model.addPropertyChangeListener(new ModelListener(view, model));	// create class model Listener
 	}
