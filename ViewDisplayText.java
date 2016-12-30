@@ -426,14 +426,13 @@ class ViewDisplayText {
 		else {
 
 			try {
-
 				intRecordNumber = textToInteger(recordNumber);
-
 			} catch(NumberFormatException e) {
-
 				JOptionPane.showMessageDialog(null, "Value must be an integer!");
-
 			}
+		}
+		if(intRecordNumber == 0) {
+			JOptionPane.showMessageDialog(null, "Value must be larger than 0");
 		}
 
     	return intRecordNumber;
