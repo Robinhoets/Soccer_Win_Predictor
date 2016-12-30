@@ -70,13 +70,14 @@ Need to create DeleteRecordAction class (DONE)
 			   ShowRecordsAction class (DONE)
 			   GraphRecordsAction class (DONE)
 
-Need logic for DeleteRecordAction class - Create pane (DONE)
+Need logic for DeleteRecordAction class - 
+
+Need logic for ShowRecordsAction class - Create pane (DONE)
 										  method reads database in DataAccessObject (DONE)
 										  method creates StringBuilder in DataAccessObject (DONE)
 										  method creates arraylist of Strings in DataAccessObject (DONE)
 										  pass array of strings from ShowRecordsAciton to method in view (DONE)
 										  then call method in view display text to add text (DONE)
 										  Needs debugging - doesn't add any text (DONE)
-										  adds text each time show records pushed - need to delete original on the page
-Need logic for ShowRecordsAction class
+										  adds text each time show records pushed - need to delete original on the page (DONE)
 Need logic for GraphAction class
