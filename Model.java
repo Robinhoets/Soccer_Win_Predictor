@@ -34,6 +34,7 @@ public class Model implements InterfaceModel {
 	
 
 	public void deleteRecord(int recordNumber) {
+		dataAccessObject.deleteRecord(recordNumber);
 		
 	}
 	// End of database section

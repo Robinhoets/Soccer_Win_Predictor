@@ -24,7 +24,6 @@ public class DataAccessObject {
     	try{
 
     		// create a mysql database connection
-      	//String myDriver = "org.gjt.mm.mysql.Driver";
     		String myDriver = "com.mysql.jdbc.Driver";
     	  // Setup the connection with the DB
     	  String myUrl = "jdbc:mysql://localhost/cfc_football_club";
@@ -202,6 +201,37 @@ public class DataAccessObject {
 
       return game;
     }
+
+    public void deleteRecord(int recordNumber) {
+
+      try{
+
+        // create a mysql database connection
+        String myDriver = "com.mysql.jdbc.Driver";
+        // Setup the connection with the DB
+        String myUrl = "jdbc:mysql://localhost/cfc_football_club";
+        Class.forName(myDriver);
+        Connection conn = DriverManager.getConnection(myUrl, "root", "Stardog8*");
+
+        // create the mysql delete statement.
+
+        String query = "delete from premierLeague20162017 where id = ?";
+        PreparedStatement preparedStmt = conn.prepareStatement(query);
+        preparedStmt.setInt(1, recordNumber);
+
+        // execute the preparedstatement
+        preparedStmt.execute();
+      
+        conn.close();
+      }
+        catch (Exception e)
+        {
+          System.err.println("Got an exception! ");
+          System.err.println(e.getMessage());
+        }
+        
+
+      }
 
     /*
     public void readDatabase() throws Exception {
