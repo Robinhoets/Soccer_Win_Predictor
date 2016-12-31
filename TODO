@@ -88,8 +88,10 @@ Need logic for ShowRecordsAction class - Create pane (DONE)
 
 Need to decide how to implement Multiple Regression
 
-
-	install rJava
+	remove all versions of R (DONE)
+	reinstall R (DONE)
+	install rJava (DONE)
+	figure out how to include R librarys in classpath
 
 Need logic for GraphAction class
 Need logic for CalculateAction class
