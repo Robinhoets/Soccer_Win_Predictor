@@ -39,6 +39,11 @@ public class Model implements InterfaceModel {
 	}
 	// End of database section
 
+	public void testRModel() {
+		RFunctions rf = new RFunctions();
+		rf.testR();
+	}
+
 
 
 	/*

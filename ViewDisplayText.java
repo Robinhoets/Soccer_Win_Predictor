@@ -438,4 +438,9 @@ class ViewDisplayText {
     	return intRecordNumber;
     }
 
+
+    public void testR() {
+    	textArea.setText("calculate button worked");
+    }
+
 }

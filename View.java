@@ -184,5 +184,8 @@ public class View implements InterfaceView {
     	return recordNumber;
     }
 
+    public void testR() {
+    	dislpayText.testR();
+    }
 
 }

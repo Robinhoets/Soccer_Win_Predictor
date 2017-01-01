@@ -27,7 +27,7 @@ class DeleteRecordAction extends AbstractAction {
 	@Override
    	public void actionPerformed(ActionEvent evt) {
 
-
+   		
    		int recordNumber = View.getRecordNumber();
 
    		model.deleteRecord(recordNumber);
