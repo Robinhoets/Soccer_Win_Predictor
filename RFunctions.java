@@ -10,9 +10,9 @@ public class RFunctions {
 		System.out.println("got to RFunctions");
 
 
-		//rengine.eval(String.format("greeting <- '%s'", "Hello R World"));
-		REXP result = rengine.eval("greeting");
-		System.out.println("Greeting from R: "+result.asString());;
+		rengine.eval(String.format("greeting <- '%s'", "Hello R World"));
+		//REXP result = rengine.eval("greeting");
+		//System.out.println("Greeting from R: "+result.asString());;
 
 		//Rengine re = Rengine.getMainEngine();
 		System.out.println("got past Rengine");

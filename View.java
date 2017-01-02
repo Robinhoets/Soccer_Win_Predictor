@@ -13,12 +13,12 @@ public class View implements InterfaceView {
 	// Create frame
     private static JFrame frame = new JFrame();
     final static boolean RIGHT_TO_LEFT = false;
-    private ViewDisplayText dislpayText = new ViewDisplayText();
+    private ViewDisplayText displayText = new ViewDisplayText();
 
 	public View() {
         // close when exited
 		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-		frame.getContentPane().add(dislpayText.getMainComponent(), BorderLayout.CENTER);
+		frame.getContentPane().add(displayText.getMainComponent(), BorderLayout.CENTER);
 	}
 
 	@Override
@@ -30,152 +30,152 @@ public class View implements InterfaceView {
 
     @Override
     public void setAddRecordAction(Action action) {
-    	dislpayText.setAddRecordButtonAction(action);
+    	displayText.setAddRecordButtonAction(action);
     }
 
     @Override
     public void setShowRecordsAction(Action action) {
-    	dislpayText.setShowRecordsButtonAction(action);
+    	displayText.setShowRecordsButtonAction(action);
     }
 
     @Override
     public void setDeleteRecordAction(Action action) {
-    	dislpayText.setDeleteRecordButtonAction(action);
+    	displayText.setDeleteRecordButtonAction(action);
     }
 
     @Override
     public void setCalculateAction(Action action) {
-    	dislpayText.setCalculateButtonAction(action);
+    	displayText.setCalculateButtonAction(action);
     }
 
     @Override
     public void setGraphAction(Action action) {
-    	dislpayText.setGraphButtonAction(action);
+    	displayText.setGraphButtonAction(action);
     }
 
 
     // Cards and fouls section
 	public int getYellowCardsTextAreaText() {
-		return dislpayText.getYellowCardsTextAreaText();
+		return displayText.getYellowCardsTextAreaText();
 	}
 	public int getRedCardsTextAreaText() {
-		return dislpayText.getRedCardsTextAreaText();
+		return displayText.getRedCardsTextAreaText();
 	}
 	public int getFoulsTextAreaText() {
-		return dislpayText.getFoulsTextAreaText();
+		return displayText.getFoulsTextAreaText();
 	}
 
 	// corners, offsides, possession, passing
 	public int getCornersTextAreaText() {
-		return dislpayText.getCornersTextAreaText();
+		return displayText.getCornersTextAreaText();
 	}
 	public int getOffsidesTextAreaText() {
-		return dislpayText.getOffsidesTextAreaText();
+		return displayText.getOffsidesTextAreaText();
 	}
 	public int getPossessionPercentTextAreaText() {
-		return dislpayText.getPossessionPercentTextAreaText();
+		return displayText.getPossessionPercentTextAreaText();
 	}
 	public int getPassAccuracyPercentTextAreaText() {
-		return dislpayText.getPassAccuracyPercentTextAreaText();
+		return displayText.getPassAccuracyPercentTextAreaText();
 	}
 
 	// tactical formation
 	public int getFormationTextAreaText() {
-		return dislpayText.getFormationTextAreaText();
+		return displayText.getFormationTextAreaText();
 	}
 	public int getOpponentsFormationTextAreaText() {
-		return dislpayText.getOpponentsFormationTextAreaText();
+		return displayText.getOpponentsFormationTextAreaText();
 	}
 
 	// goals formation
 	public int getGoalsTextAreaText() {
-		return dislpayText.getGoalsTextAreaText();
+		return displayText.getGoalsTextAreaText();
 	}
 	public int getGoalsScoredCounterAttackTextAreaText() {
-		return dislpayText.getGoalsScoredCounterAttackTextAreaText();
+		return displayText.getGoalsScoredCounterAttackTextAreaText();
 	}
 	public int getGoalsScoredOpenPlayTextAreaText() {
-		return dislpayText.getGoalsScoredOpenPlayTextAreaText();
+		return displayText.getGoalsScoredOpenPlayTextAreaText();
 	}
 	public int getGoalsScoredSetPieceTextAreaText() {
-		return dislpayText.getGoalsScoredSetPieceTextAreaText();
+		return displayText.getGoalsScoredSetPieceTextAreaText();
 	}
 	public int getGoalsScoredPenaltyTextAreaText() {
-		return dislpayText.getGoalsScoredPenaltyTextAreaText();
+		return displayText.getGoalsScoredPenaltyTextAreaText();
 	}
 	public int getOwnGoalTextAreaText() {
-		return dislpayText.getOwnGoalsTextAreaText();
+		return displayText.getOwnGoalsTextAreaText();
 	}
 
 	// offensive moves
 	public int getShotsTextAreaText(){
-		return dislpayText.getShotsTextAreaText();
+		return displayText.getShotsTextAreaText();
 	}
 	public int getShotsOnTargetTextAreaText() {
-		return dislpayText.getShotsOnTargetTextAreaText();
+		return displayText.getShotsOnTargetTextAreaText();
 	}
 	public int getDribblesWonTextAreaText() {
-		return dislpayText.getDribblesWonTextAreaText();
+		return displayText.getDribblesWonTextAreaText();
 	}
 	public int getFoulsWonTextAreaText() {
-		return dislpayText.getFoulsWonTextAreaText();
+		return displayText.getFoulsWonTextAreaText();
 	}
 
 	// defensive moves
 	public int getTacklesTextAreaText() {
-		return dislpayText.getTacklesTextAreaText();
+		return displayText.getTacklesTextAreaText();
 	}
 	public int getInterceptionsTextAreaText() {
-		return dislpayText.getInterceptionsTextAreaText();
+		return displayText.getInterceptionsTextAreaText();
 	}
 	public int getClearanceTextAreaText() {
-		return dislpayText.getClearanceTextAreaText();
+		return displayText.getClearanceTextAreaText();
 	}
 	public int getShotsBlockedTextAreaText() {
-		return dislpayText.getShotsBlockedTextAreaText();
+		return displayText.getShotsBlockedTextAreaText();
 	}
 	public int getShotsConcededTextAreaText() {
-		return dislpayText.getShotsConcededTextAreaText();
+		return displayText.getShotsConcededTextAreaText();
 	}
 
 	// passing
 	public int getTotalPassesTextAreaText() {
-		return dislpayText.getTotalPassesTextAreaText();
+		return displayText.getTotalPassesTextAreaText();
 	}
 	public int getPassSuccessPercentTextAreaText() {
-		return dislpayText.getPassSuccessPercentTextAreaText();
+		return displayText.getPassSuccessPercentTextAreaText();
 	}
 	public int getCrossPassTextAreaText() {
-		return dislpayText.getCrossPassTextAreaText();
+		return displayText.getCrossPassTextAreaText();
 	}
 	public int getThroughBallPassTextAreaText() {
-		return dislpayText.getThroughBallPassTextAreaText();
+		return displayText.getThroughBallPassTextAreaText();
 	}
 	public int getLongBallPassTextAreaText() {
-		return dislpayText.getLongBallPassTextAreaText();
+		return displayText.getLongBallPassTextAreaText();
 	}
 	public int getShortPassTextAreaText() {
-		return dislpayText.getShortPassTextAreaText();
+		return displayText.getShortPassTextAreaText();
 	}
 
 	//win or loss
 	public int getWinTextAreaText() {
-		return dislpayText.getWinTextAreaText();
+		return displayText.getWinTextAreaText();
 	}
 
 
     @Override
     public void resetTextBoxes() {
-    	dislpayText.resetTextBoxes();
+    	displayText.resetTextBoxes();
     }
 
 
     public void addGameListToScrollPane(ArrayList<String> gameList) {
-    	dislpayText.addGameListToScrollPane(gameList);
+    	displayText.addGameListToScrollPane(gameList);
     }
 
     public void addScrollPane(){
-    	dislpayText.addScrollPane();
+    	displayText.addScrollPane();
     	setVisible(true);
     }
 
@@ -185,7 +185,7 @@ public class View implements InterfaceView {
     }
 
     public void testR() {
-    	dislpayText.testR();
+    	displayText.testR();
     }
 
 }
