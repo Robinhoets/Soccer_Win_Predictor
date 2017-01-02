@@ -22,9 +22,11 @@ class CalculateAction extends AbstractAction {
 	@Override
    	public void actionPerformed(ActionEvent evt) {
 
-   		//model.testRModel();
-   		view.testR();
-   		view.addScrollPane();
+   		System.out.println("got to calculate button");
+   		model.testRModel();
+
+   		//view.testR();
+   		//view.addScrollPane();
    		
    	}
 

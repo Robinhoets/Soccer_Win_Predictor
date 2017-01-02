@@ -40,7 +40,10 @@ public class Model implements InterfaceModel {
 	// End of database section
 
 	public void testRModel() {
+		System.out.println("got to Model");
+
 		RFunctions rf = new RFunctions();
+		System.out.println("got to Model after rf");
 		rf.testR();
 	}
 

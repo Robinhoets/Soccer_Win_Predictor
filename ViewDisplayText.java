@@ -440,7 +440,7 @@ class ViewDisplayText {
 
 
     public void testR() {
-    	textArea.setText("calculate button worked");
+    	textArea.append("calculate button worked");
     }
 
 }
