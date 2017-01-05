@@ -14,6 +14,7 @@ public class View implements InterfaceView {
     private static JFrame frame = new JFrame();
     final static boolean RIGHT_TO_LEFT = false;
     private ViewDisplayText displayText = new ViewDisplayText();
+    private RecordText recordsText = new RecordText();
 
 	public View() {
         // close when exited

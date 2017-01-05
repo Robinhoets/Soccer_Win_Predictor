@@ -7,20 +7,19 @@ import javax.swing.border.BevelBorder;
 import java.awt.*;
 
 
-
-
 class RecordText{
 
 	//create scrollpane that can be added
-	JTextArea textArea = new JTextArea(5, 70);
-	JScrollPane scrollPane = new JScrollPane(textArea);
+	JTextArea textArea;
+	JScrollPane scrollPane;
 
 
 	public RecordText() {
 
-
-
+		textArea = new JTextArea(5, 70);
+		scrollPane = new JScrollPane(textArea);
 	}
+
 	
 	public void  addGameListToScrollPane(ArrayList<String> gameList) {
 
