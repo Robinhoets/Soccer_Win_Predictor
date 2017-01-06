@@ -20,6 +20,7 @@ public class View implements InterfaceView {
         // close when exited
 		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		frame.getContentPane().add(displayText.getMainComponent(), BorderLayout.CENTER);
+		//frame.getContentPane().add(recordsText.getMainComponent(), BorderLayout.EAST);
 	}
 
 	@Override
@@ -172,15 +173,19 @@ public class View implements InterfaceView {
 
 
     // RecordT Text area
-    
+
 
 
     public void addGameListToScrollPane(ArrayList<String> gameList) {
-    	displayText.addGameListToScrollPane(gameList);
+    	//displayText.addGameListToScrollPane(gameList);
+    	
     }
 
     public void addScrollPane(){
-    	displayText.addScrollPane();
+
+    	//displayText.addScrollPane();
+    	JPanel scrollPanel = recordsText.addScrollPane();
+    	frame.add(scrollPanel);
     	setVisible(true);
     }
 

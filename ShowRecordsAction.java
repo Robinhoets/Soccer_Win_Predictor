@@ -26,6 +26,7 @@ class ShowRecordsAction extends AbstractAction {
    		
    		gameList.clear();
    		gameList = model.getAllRecords();
+   		// view.
    		view.addGameListToScrollPane(gameList);
    		view.addScrollPane();
    	}
