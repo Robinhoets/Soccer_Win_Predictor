@@ -171,6 +171,10 @@ public class View implements InterfaceView {
     }
 
 
+    // RecordT Text area
+    
+
+
     public void addGameListToScrollPane(ArrayList<String> gameList) {
     	displayText.addGameListToScrollPane(gameList);
     }
