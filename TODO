@@ -94,6 +94,9 @@ Need to decide how to implement Multiple Regression
 	figure out how to include R librarys in classpath
 			javac -cp .:/home/robinho/Desktop/SoccerData/jars/JRI.jar  *.java
 			java -cp .:/home/robinho/Desktop/SoccerData/jars/JRI.jar MvcMain
+			figure out how to do properly
 
+Add class for records text to seperate show records from view display text
+	
 Need logic for GraphAction class
 Need logic for CalculateAction class
