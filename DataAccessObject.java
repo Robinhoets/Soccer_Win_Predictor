@@ -99,7 +99,8 @@ public class DataAccessObject {
         String myDriver = "com.mysql.jdbc.Driver";
         // Setup the connection with the DB
         String myUrl = "jdbc:mysql://localhost/cfc_football_club";
-        Class.forName(myDriver);
+        Class.forName(myDriver);  // getting exception here ************************************** worked fine before change to RecordText.java
+
         Connection conn = DriverManager.getConnection(myUrl, "root", "Stardog8*");
 
         // SQL query
@@ -171,7 +172,7 @@ public class DataAccessObject {
 
         } catch (Exception e)
           {
-              System.err.println("Got an exception!");
+              System.err.println("Got an exception in Reading Database!");
               System.err.println(e.getMessage());
           }
 
@@ -226,7 +227,7 @@ public class DataAccessObject {
       }
         catch (Exception e)
         {
-          System.err.println("Got an exception! ");
+          System.err.println("Got an exception in Deleting A Record! ");
           System.err.println(e.getMessage());
         }
         

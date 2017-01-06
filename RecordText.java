@@ -45,6 +45,7 @@ class RecordText{
 
     }
 
+
     public JScrollPane getScrollPane() {
     	return scrollPane;
     }

@@ -396,7 +396,8 @@ class ViewDisplayText {
 
 		winText.setText("");
     }
-
+    
+    /*
     public void  addGameListToScrollPane(ArrayList<String> gameList) {
 
     	textArea.setText("");
@@ -406,6 +407,7 @@ class ViewDisplayText {
 
     }
 
+    
     public void addScrollPane(){
 
     	scrollPane.setHorizontalScrollBarPolicy(JScrollPane.HORIZONTAL_SCROLLBAR_ALWAYS);
@@ -413,6 +415,7 @@ class ViewDisplayText {
 
     	mainPanel.add(scrollPane, BorderLayout.EAST);
     }
+	*/
 
     public static int getRecordNumber() {
 

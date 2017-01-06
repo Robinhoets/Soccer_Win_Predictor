@@ -25,7 +25,7 @@ public class Model implements InterfaceModel {
 
 		} catch (Exception e)
           {
-              System.err.println("Got an exception!");
+              System.err.println("Got an exception in getting records in model!");
               System.err.println(e.getMessage());
           }
 		return gameList;

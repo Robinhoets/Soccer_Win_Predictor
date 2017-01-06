@@ -178,7 +178,7 @@ public class View implements InterfaceView {
 
     public void addGameListToScrollPane(ArrayList<String> gameList) {
     	//displayText.addGameListToScrollPane(gameList);
-    	
+    	recordsText.addGameListToScrollPane(gameList);
     }
 
     public void addScrollPane(){
