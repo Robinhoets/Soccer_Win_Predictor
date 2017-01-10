@@ -103,6 +103,9 @@ Need to decide how to implement Multiple Regression
 
 	Install Weka(DONE)
 	compile class with Weka (DONE)
+		javac -cp /usr/share/java/mysql-connector-java.jar:/usr/share/java/weka.jar WekaTest.java
+		java -cp .:/usr/share/java/mysql-connector-java.jar:/usr/share/java/weka.jar WekaTest
+
 
 Add class for records text to seperate show records from view display text
 	
