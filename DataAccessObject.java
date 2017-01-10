@@ -95,12 +95,12 @@ public class DataAccessObject {
 
       try{
         // create a mysql database connection
-        //String myDriver = "org.gjt.mm.mysql.Driver";
-        String myDriver = "com.mysql.jdbc.Driver";
+        String myDriver = "org.gjt.mm.mysql.Driver";
+        //String myDriver = "com.mysql.jdbc.Driver";
         // Setup the connection with the DB
         String myUrl = "jdbc:mysql://localhost/cfc_football_club";
         Class.forName(myDriver);  // getting exception here ************************************** worked fine before change to RecordText.java
-
+        System.out.println("Im here");
         Connection conn = DriverManager.getConnection(myUrl, "root", "Stardog8*");
 
         // SQL query
