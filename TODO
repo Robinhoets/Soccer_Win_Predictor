@@ -88,6 +88,7 @@ Need logic for ShowRecordsAction class - Create pane (DONE)
 
 Need to decide how to implement Multiple Regression
 
+	-----------------------------------------------------------
 	remove all versions of R (DONE)
 	reinstall R (DONE)
 	install rJava (DONE)
@@ -95,6 +96,13 @@ Need to decide how to implement Multiple Regression
 			javac -cp .:/home/robinho/Desktop/SoccerData/jars/JRI.jar  *.java
 			java -cp .:/home/robinho/Desktop/SoccerData/jars/JRI.jar MvcMain
 			figure out how to do properly
+
+	**** SCRAPPED USE OF R - USING WEKA TO PROCESS DATA ****
+
+	-------------------------------------------------------
+
+	Install Weka(DONE)
+	compile class with Weka (DONE)
 
 Add class for records text to seperate show records from view display text
 	
