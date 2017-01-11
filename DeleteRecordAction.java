@@ -27,18 +27,8 @@ class DeleteRecordAction extends AbstractAction {
 	@Override
    	public void actionPerformed(ActionEvent evt) {
 
-   		
    		int recordNumber = View.getRecordNumber();
-
    		model.deleteRecord(recordNumber);
-
-   		
-
-
-   		/*
-   		String name = JOptionPane.showInputDialog(parent,
-                        "What is your name?", null);
-		*/
    	}
 
 }

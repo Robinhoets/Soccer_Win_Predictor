@@ -24,8 +24,8 @@ class ViewDisplayText {
 	private JButton deleteRecordButton = new JButton("Delete Record");
 
 	//create scrollpane that can be added
-	JTextArea textArea = new JTextArea(5, 70);
-	JScrollPane scrollPane = new JScrollPane(textArea);
+	private JTextArea textArea = new JTextArea(5, 70);
+	private JScrollPane scrollPane = new JScrollPane(textArea);
 
 	// labels section
 	private JLabel yellowCardsLabel = new JLabel("Yellow Cards");
@@ -419,11 +419,6 @@ class ViewDisplayText {
 		}
 
     	return intRecordNumber;
-    }
-
-
-    public void testR() {
-    	textArea.append("calculate button worked");
     }
 
 }

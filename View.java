@@ -189,8 +189,4 @@ public class View implements InterfaceView {
     	return recordNumber;
     }
 
-    public void testR() {
-    	displayText.testR();
-    }
-
 }
