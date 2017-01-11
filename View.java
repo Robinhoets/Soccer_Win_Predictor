@@ -172,18 +172,13 @@ public class View implements InterfaceView {
     }
 
 
-    // RecordT Text area
-
-
-
+    // Record Text area
     public void addGameListToScrollPane(ArrayList<String> gameList) {
-    	//displayText.addGameListToScrollPane(gameList);
     	recordsText.addGameListToScrollPane(gameList);
     }
 
     public void addScrollPane(){
 
-    	//displayText.addScrollPane();
     	JPanel scrollPanel = recordsText.addScrollPane();
     	frame.add(scrollPanel);
     	setVisible(true);

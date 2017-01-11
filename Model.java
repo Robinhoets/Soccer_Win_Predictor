@@ -18,7 +18,7 @@ public class Model implements InterfaceModel {
 		dataAccessObject.addRecord(game);
 	}
 
-	public ArrayList<String> getAllRecords() {		// turn into return type arraylist of stringbuilder and return to ShowRecordsAction
+	public ArrayList<String> getAllRecords() {	
 		try {
 
 			gameList = dataAccessObject.readDatabaseAndCreateArrayList();
