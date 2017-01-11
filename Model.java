@@ -40,20 +40,6 @@ public class Model implements InterfaceModel {
 	// End of database section
 
 
-
-
-	/*
-	@Override
-	public void addGame(Game game) {
-		gameList.add(game);
-	}
-
-	@Override
-	public ArrayList<Game> getGameList() {
-		return gameList;
-	}
-	*/
-
 	@Override
    	public void addPropertyChangeListener(PropertyChangeListener listener) {
      	 propChangeSupport.addPropertyChangeListener(listener);
