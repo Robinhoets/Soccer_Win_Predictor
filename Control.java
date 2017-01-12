@@ -15,7 +15,7 @@ public class Control {
 		view.setGraphAction(new GraphAction(view, model, "Graph"));
 
 		view.setLinearRegressionAction(new LinearRegressionAction(view, model, "Linear Regression"));
-
+		view.setGoBackToMainPageAction(new GoBackToMainPageAction(view, model, "Main Page"));
 		//model.addPropertyChangeListener(new ModelListener(view, model));	// create class model Listener
 	}
 

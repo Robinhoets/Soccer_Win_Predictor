@@ -9,10 +9,13 @@ public class CalculateButtonsPanel {
 	private JPanel buttonPanel = new JPanel(new GridLayout(3, 0, 2, 0));
 	//private JTextArea textArea;
 	//private JScrollPane scrollPane;
+	private JButton goBackToMainPageButton = new JButton("Main Page");
 	private JButton linearRegressionButton = new JButton("Linear Regression");
 
 	public CalculateButtonsPanel() {
+		buttonPanel.add(goBackToMainPageButton);
 		buttonPanel.add(linearRegressionButton);
+
 	}
 
 
@@ -21,9 +24,12 @@ public class CalculateButtonsPanel {
 		return mainPanel;
 	}
 
-
 	// actions for buttons
 	public void setLinearRegressionButtonAction(Action action) {
 		linearRegressionButton.setAction(action);
+	}
+
+	public void setGoBackToMainPageButtonAction(Action action) {
+		goBackToMainPageButton.setAction(action);
 	}
 }

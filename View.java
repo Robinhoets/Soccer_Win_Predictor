@@ -60,6 +60,10 @@ public class View implements InterfaceView {
     }
 
     // buttons from Calculate buttons panel
+    public void setGoBackToMainPageAction(Action action) {
+    	calculationsPanel.setGoBackToMainPageButtonAction(action);
+    }
+
     public void setLinearRegressionAction(Action action) {
     	calculationsPanel.setLinearRegressionButtonAction(action);
     }
