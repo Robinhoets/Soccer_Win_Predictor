@@ -33,7 +33,7 @@ public class View implements InterfaceView {
       	frame.setLocationRelativeTo(null);
       	frame.setVisible(true);
     }
-
+    // buttons from initial view
     @Override
     public void setAddRecordAction(Action action) {
     	displayText.setAddRecordButtonAction(action);
@@ -57,6 +57,11 @@ public class View implements InterfaceView {
     @Override
     public void setGraphAction(Action action) {
     	displayText.setGraphButtonAction(action);
+    }
+
+    // buttons from Calculate buttons panel
+    public void setLinearRegressionAction(Action action) {
+    	calculationsPanel.setLinearRegressionButtonAction(action);
     }
 
 

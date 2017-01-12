@@ -14,6 +14,8 @@ public class Control {
 		view.setDeleteRecordAction(new DeleteRecordAction(view, model, "Delete Record"));
 		view.setGraphAction(new GraphAction(view, model, "Graph"));
 
+		view.setLinearRegressionAction(new LinearRegressionAction(view, model, "Linear Regression"));
+
 		//model.addPropertyChangeListener(new ModelListener(view, model));	// create class model Listener
 	}
 
