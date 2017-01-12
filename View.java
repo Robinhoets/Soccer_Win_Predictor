@@ -15,6 +15,10 @@ public class View implements InterfaceView {
     final static boolean RIGHT_TO_LEFT = false;
     private ViewDisplayText displayText = new ViewDisplayText();
     private RecordText recordsText = new RecordText();
+    private CalculateButtonsPanel calculationsPanel = new CalculateButtonsPanel();
+
+    private JPanel scrollPanel;
+    private JPanel calculateButtonsPanel;
 
 	public View() {
         // close when exited
@@ -179,7 +183,7 @@ public class View implements InterfaceView {
 
     public void addScrollPane(){
 
-    	JPanel scrollPanel = recordsText.addScrollPane();
+    	scrollPanel = recordsText.addScrollPane();
     	frame.add(scrollPanel);
     	setVisible(true);
     }
@@ -187,6 +191,18 @@ public class View implements InterfaceView {
     public static int getRecordNumber() {
     	int recordNumber = ViewDisplayText.getRecordNumber();
     	return recordNumber;
+    }
+
+    public void removeAllPanels() {
+    	frame.getContentPane().removeAll();
+		//frame.getContentPane().add(new JPanel());
+		frame.pack();
+    }
+
+    public void addCalculateButtonPanel() {
+    	calculateButtonsPanel = calculationsPanel.addPanel();
+    	frame.add(calculateButtonsPanel);
+    	setVisible(true);
     }
 
 }

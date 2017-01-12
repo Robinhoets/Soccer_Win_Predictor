@@ -9,7 +9,7 @@ public class Control {
 
 
 		view.setAddRecordAction(new AddRecordAction(view, model, "Add Record"));
-		view.setCalculateAction(new CalculateAction(view, model, "Calculate"));
+		view.setCalculateAction(new CalculateAction(view, model, "Calculate Options"));
 		view.setShowRecordsAction(new ShowRecordsAction(view, model, "Show Records"));
 		view.setDeleteRecordAction(new DeleteRecordAction(view, model, "Delete Record"));
 		view.setGraphAction(new GraphAction(view, model, "Graph"));

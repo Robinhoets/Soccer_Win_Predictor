@@ -23,7 +23,7 @@ class ShowRecordsAction extends AbstractAction {
 
 	@Override
    	public void actionPerformed(ActionEvent evt) {
-   		
+
    		gameList.clear();
    		gameList = model.getAllRecords();
    		view.addGameListToScrollPane(gameList);

@@ -16,7 +16,7 @@ class RecordText{
 	private JTextArea textArea;
 	private JScrollPane scrollPane;
 
-	ArrayList<String> gameList;
+	private ArrayList<String> gameList;
 
 
 	public RecordText() {
