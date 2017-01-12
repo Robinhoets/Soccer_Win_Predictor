@@ -10,6 +10,13 @@ public class WekaTest{
 
 	public static void main(String []args) {
 		System.out.println("Weka imports worked!");
+		
+
+
+		 //System.out.println(data);
+	}
+
+	public void runLinearRegression() {
 		InstanceQuery query=null;
 
 		try{
@@ -33,10 +40,8 @@ public class WekaTest{
 		 } catch(Exception e){
 		 	System.out.println(e);
 		 }
-
-
-		 //System.out.println(data);
 	}
+
 
 	/*
 	import weka.core.Instance;

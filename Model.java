@@ -32,13 +32,16 @@ public class Model implements InterfaceModel {
 
 	}
 	
-
 	public void deleteRecord(int recordNumber) {
 		dataAccessObject.deleteRecord(recordNumber);
 		
 	}
 	// End of database section
 
+	WekaTest weka = new WekaTest();
+	public void runLinearRegression() {
+		weka.runLinearRegression();
+	}
 
 	@Override
    	public void addPropertyChangeListener(PropertyChangeListener listener) {

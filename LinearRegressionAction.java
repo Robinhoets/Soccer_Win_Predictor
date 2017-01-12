@@ -5,15 +5,14 @@ import java.beans.PropertyChangeListener;
 import java.util.Scanner;
 import java.util.concurrent.ExecutionException;
 import javax.swing.*;
-import java.util.ArrayList;
 
 @SuppressWarnings("serial")
-class CalculateAction extends AbstractAction { 
-
+public class LinearRegressionAction extends AbstractAction {
+	
 	private View view;
 	private Model model;
 
-	public CalculateAction(View view, Model model, String name) {
+	public LinearRegressionAction(View view, Model model, String name) {
 		super(name);
 		this.view = view;
 		this.model = model;
@@ -22,8 +21,9 @@ class CalculateAction extends AbstractAction {
 	@Override
    	public void actionPerformed(ActionEvent evt) {
 
-   		view.removeAllPanels();
-   		view.addCalculateButtonPanel();
+   		//System.out.println("Got to linear button");
+
+   		model.runLinearRegression();
    	}
 
 }
