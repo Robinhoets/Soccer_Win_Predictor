@@ -103,8 +103,8 @@ Need to decide how to implement Multiple Regression
 
 	Install Weka(DONE)
 	compile class with Weka (DONE)
-		javac -cp /usr/share/java/mysql-connector-java.jar:/usr/share/java/weka.jar WekaTest.java
-		java -cp .:/usr/share/java/mysql-connector-java.jar:/usr/share/java/weka.jar WekaTest
+		javac -cp /usr/share/java/mysql-connector-java.jar:/usr/share/java/weka.jar *.java
+		java -cp .:/usr/share/java/mysql-connector-java.jar:/usr/share/java/weka.jar MvcMain
 
 
 ----------------------------------------
@@ -112,7 +112,7 @@ export for mysql connector
 export CLASSPATH=$CLASSPATH:/usr/share/java/mysql-connector-java.jar
 ----------------------------------------
 
-Add class for records text to seperate show records from view display text
+Add class for records text to seperate show records from view display text (DONE)
 	
 Need logic for GraphAction class
 Need logic for CalculateAction class

@@ -12,6 +12,8 @@ class GoBackToMainPageAction extends AbstractAction {
 	private View view;
 	private Model model;
 
+	View mainPageDisplayText;
+
 	public GoBackToMainPageAction(View view, Model model, String name) {
 		super(name);
 		this.view = view;
@@ -22,6 +24,9 @@ class GoBackToMainPageAction extends AbstractAction {
    	public void actionPerformed(ActionEvent evt) {
 
    		System.out.println("got to main page button");
+   		view.removeAllPanels();
+   		mainPageDisplayText = new View();
+
    	}
 
 }
