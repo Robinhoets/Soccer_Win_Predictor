@@ -69,6 +69,16 @@ public class View implements InterfaceView {
     }
 
 
+    // check boxes
+    public void setYellowCardAction(Action action) {
+    	calculationsPanel.setYellowCardCheckBoxAction(action);
+    }
+
+    public void setRedCardAction(Action action) {
+    	calculationsPanel.setRedCardCheckBoxAction(action);
+    }
+
+
     // Cards and fouls section
 	public int getYellowCardsTextAreaText() {
 		return displayText.getYellowCardsTextAreaText();

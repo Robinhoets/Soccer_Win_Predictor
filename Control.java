@@ -16,6 +16,12 @@ public class Control {
 
 		view.setLinearRegressionAction(new LinearRegressionAction(view, model, "Linear Regression"));
 		view.setGoBackToMainPageAction(new GoBackToMainPageAction(view, model, "Main Page"));
+
+		view.setYellowCardAction(new CheckBoxAction(view, model, "Yellow Cards", 1));
+		view.setRedCardAction(new CheckBoxAction(view, model, "Red Cards", 2));
+
+
+
 		//model.addPropertyChangeListener(new ModelListener(view, model));	// create class model Listener
 	}
 

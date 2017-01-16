@@ -56,14 +56,9 @@ public class CalculateButtonsPanel {
 		buttonPanel.add(linearRegressionButton);
 
 		yellowCardsBox = new JCheckBox("Yellow Cards");
-		yellowCardsBox.setMnemonic(KeyEvent.VK_Y);
-        yellowCardsBox.setSelected(true);
-
 		redCardsBox = new JCheckBox("Red Cards");
-		redCardsBox.setMnemonic(KeyEvent.VK_R);
-        redCardsBox.setSelected(true);
-
         foulsBox = new JCheckBox("Fouls");
+
         cornersBox = new JCheckBox("Corners");
 		offsidesBox = new JCheckBox("Offsides");
 		possessionPercentBox = new JCheckBox("Possession Percent");
@@ -134,8 +129,6 @@ public class CalculateButtonsPanel {
         checkBoxesPanel.add(longBallPassBox);
         checkBoxesPanel.add(shortPassBox);
 
-
-
 	}
 
 
@@ -152,5 +145,14 @@ public class CalculateButtonsPanel {
 
 	public void setGoBackToMainPageButtonAction(Action action) {
 		goBackToMainPageButton.setAction(action);
+	}
+
+	// actions for boxes
+	public void setYellowCardCheckBoxAction(Action action) {
+		yellowCardsBox.setAction(action);
+	}
+
+	public void setRedCardCheckBoxAction(Action action) {
+		redCardsBox.setAction(action);
 	}
 }
