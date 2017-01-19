@@ -151,7 +151,6 @@ public class CalculateButtonsPanel {
 	public void setYellowCardCheckBoxAction(Action action) {
 		yellowCardsBox.setAction(action);
 	}
-
 	public void setRedCardCheckBoxAction(Action action) {
 		redCardsBox.setAction(action);
 	}
