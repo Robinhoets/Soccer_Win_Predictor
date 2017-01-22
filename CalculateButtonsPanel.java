@@ -201,7 +201,7 @@ public class CalculateButtonsPanel {
 	public void setShotsCheckBoxAction(Action action) {
 		shotsBox.setAction(action);
 	}
-	public void seShotsOnTargetCheckBoxAction(Action action) {
+	public void setShotsOnTargetCheckBoxAction(Action action) {
 		shotsOnTargetBox.setAction(action);
 	}
 	public void setDribblesWonCheckBoxAction(Action action) {
