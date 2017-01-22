@@ -118,8 +118,8 @@ Add class for records text to seperate show records from view display text (DONE
 Allow user to select values for linear regression
 	Add rest of checkboxes (DONE)
 	add actions for checkboxes
-		add setCheckBOxActions in CalculateButtonsPanel.java
-		add setAction setters in View.java
+		add setCheckBOxActions in CalculateButtonsPanel.java (DONE)
+		add setAction setters in View.java (DONE)
 		add new CheckBox actions for check boxes in Control.java
 		add if statements in CheckBoxAction.java
 
