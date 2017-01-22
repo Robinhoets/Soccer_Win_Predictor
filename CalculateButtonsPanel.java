@@ -147,6 +147,8 @@ public class CalculateButtonsPanel {
 		goBackToMainPageButton.setAction(action);
 	}
 
+
+
 	// actions for boxes
 	public void setYellowCardCheckBoxAction(Action action) {
 		yellowCardsBox.setAction(action);
@@ -154,4 +156,95 @@ public class CalculateButtonsPanel {
 	public void setRedCardCheckBoxAction(Action action) {
 		redCardsBox.setAction(action);
 	}
+	public void setFoulsCheckBoxAction(Action action) {
+		foulsBox.setAction(action);
+	}
+
+	public void setCornersCheckBoxAction(Action action) {
+		cornersBox.setAction(action);
+	}
+	public void setOffsidesCheckBoxAction(Action action) {
+		offsidesBox.setAction(action);
+	}
+	public void setPossessionPercentCheckBoxAction(Action action) {
+		possessionPercentBox.setAction(action);
+	}
+	public void setPassAccuracyPercentCheckBoxAction(Action action) {
+		passAccuracyPercentBox.setAction(action);
+	}
+	public void setFormationCheckBoxAction(Action action) {
+		formationBox.setAction(action);
+	}
+	public void setOpponentsFormationCheckBoxAction(Action action) {
+		opponentsFormationBox.setAction(action);
+	}
+
+	public void setGoalsCheckBoxAction(Action action) {
+		goalsBox.setAction(action);
+	}
+	public void setGoalsScoredCounterAttackCheckBoxAction(Action action) {
+		goalsScoredCounterAttackBox.setAction(action);
+	}
+	public void setGoalsScoredOpenPlayCheckBoxAction(Action action) {
+		goalsScoredOpenPlayBox.setAction(action);
+	}
+	public void setGoalsScoredSetPieceCheckBoxAction(Action action) {
+		goalsScoredSetPieceBox.setAction(action);
+	}
+	public void setGoalsScoredPenaltyCheckBoxAction(Action action) {
+		goalsScoredPenaltyBox.setAction(action);
+	}
+	public void setOwnGoalsCheckBoxAction(Action action) {
+		ownGoalsBox.setAction(action);
+	}
+
+	public void setShotsCheckBoxAction(Action action) {
+		shotsBox.setAction(action);
+	}
+	public void seShotsOnTargetCheckBoxAction(Action action) {
+		shotsOnTargetBox.setAction(action);
+	}
+	public void setDribblesWonCheckBoxAction(Action action) {
+		dribblesWonBox.setAction(action);
+	}
+	public void setFoulsWonCheckBoxAction(Action action) {
+		foulsWonBox.setAction(action);
+	}
+
+	public void setTacklesCheckBoxAction(Action action) {
+		tacklesBox.setAction(action);
+	}
+	public void setInterceptionsCheckBoxAction(Action action) {
+		interceptionsBox.setAction(action);
+	}
+	public void setClearanceCheckBoxAction(Action action) {
+		clearanceBox.setAction(action);
+	}
+	public void setShotsBlockedCheckBoxAction(Action action) {
+		shotsBlockedBox.setAction(action);
+	}
+	public void setShotsConcededCheckBoxAction(Action action) {
+		shotsConcededBox.setAction(action);
+	}
+
+	public void setTotalPassesCheckBoxAction(Action action) {
+		totalPassesBox.setAction(action);
+	}
+	public void setPassSuccessPercentCheckBoxAction(Action action) {
+		passSuccessPercentBox.setAction(action);
+	}
+	public void setCrossPassCheckBoxAction(Action action) {
+		crossPassBox.setAction(action);
+	}
+	public void setThroughBallPassCheckBoxAction(Action action) {
+		throughBallPassBox.setAction(action);
+	}
+	public void setLongBallPassCheckBoxAction(Action action) {
+		longBallPassBox.setAction(action);
+	}
+	public void setShortPassCheckBoxAction(Action action) {
+		shortPassBox.setAction(action);
+	}
+
+
 }
